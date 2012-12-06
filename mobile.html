@@ -1,0 +1,114 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mural Soldario - ISCTE-IUL 40 Anos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+	<style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<link rel="shortcut icon" href="favicon.ico">
+    </head>
+	
+  <body>
+
+    <div class="navbar navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Mural Solidario - Mobile</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#contact">Contactos</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+		<div class="span9">
+			<div class="row">
+				  <div class="span5">
+					  <h1>Apoie esta causa</h1>
+					  <p>Compre um cubo</p>
+				  </div>
+				  
+				  <div class="span4">
+					  <img src="mobile.png"  class="span5"/>
+				  </div>
+			</div>
+			<div class="row">
+			<div class="span4">
+			 <legend>Formulario</legend>
+			    <form method='POST' action="mobilesend.php">
+					<label>Nome Completo</label> <input type='text' name='nome' /> <br /> 
+				    <label>E-mail</label> <input type='email' name='email_from' /> <br /> 
+					<label>NIF</label>  <input type='text' name='nif' required/> <br />
+					<label>Morada</label>  <input type='text' name='morada' required/> <br />
+					<label>Codigo-Postal</label>  <input type='text'  name='codpostal' required/> <br />
+					<label>Localidade</label>  <input type='text' name='localidade' required/> <br />
+					<label>Relação com o ISCTE-IUL</label>  
+					<select name='relacao-iscte'>
+					  <option value='antigo aluno'>antigo aluno</option>
+					  <option value='aluno'>aluno</option>"
+					  <option value='familiar de aluno/ antigo aluno'>familiar de aluno/ antigo aluno</option>
+					  <option value='funcionário'>funcionário</option>
+					  <option value='professor'>professor</option>
+					  <option value='amigo do ISCTE-IUL'>amigo do ISCTE-IUL</option>
+					</select>  <br />
+					<label>Apoio com</label> <div class='input-prepend'> <span class='add-on'>&euro;</span>  
+					<input class='span1' id='prependedInput' name='valor' type='text' placeholder='10'></div> 
+					<input class='btn btn-info' value='Submeter' type='submit'> 
+				</form>
+				</div>
+				<div class="span5">
+					<legend>Pre&ccedil;os</legend>
+					<ol>
+					
+Tijolos Cinza Quadrangulares Pequenos - 85x85mm € O que quiser dar
+Tijolos Amarelos Quadrangulares Pequenos - 85x85mm - 25€
+Tijolos Laranjas Quadrangulares Pequenos - 85x85mm - 50€
+Tijolos Cinza Rectangulares Pequenos - 85x210mm - 75€
+Tijolos Cinza Quadrangulares Pequenos - 85x85mm  donativos até 25€
+Tijolos Amarelos Quadrangulares Pequenos - 85x85mm - 25€
+Tijolos Laranjas Quadrangulares Pequenos - 85x85mm - 50€
+Tijolos Amarelos Rectangulares Pequenos - 85x210mm - 100€
+Tijolos Cinza Rectangulares Pequenos - 85x210mm - 200€
+Tijolos Vermelhos Rectangulares Pequenos - 85x210mm - 250€
+Tijolos Violeta Quadrangulares - 210x210mm - 500€
+Tijolos Vermelhos Quadrangulares - 210x210mm - 1000€
+Tijolos Laranja Rectangulares Grandes - 210x335mm - 4500€
+Tijolos Violeta Rectangulares Pequenos - 210x335mm - 9500€
+Tijolo Vermelho Quadrangular Grande - 335x335mm - 15000€
+					</ol>
+				</div>
+			</div>
+		</div>
+    </div>
+	
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
