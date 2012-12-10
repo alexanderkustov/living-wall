@@ -1,0 +1,795 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/three.min.js"></script>
+		<script src="js/stats.js"></script>
+
+
+		<title>Mural Solidario ISCTE 40 Anos</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				background-color: #171717;
+				margin: 0px;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			var x=0, y=0;
+		</script>
+
+				<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+						<h3 id="myModalLabel">Apoie a nossa causa</h3>
+					</div>
+					<div class="modal-body">
+						<p id="write-here">One fine body... </p>
+					</div>
+					<div class="modal-footer">
+						<button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+						<button class="btn btn-primary">Continuar</button>
+					</div>
+				</div>
+
+		<!--<video id="wall" style="display:none"><source src="l.mp4" type=''><source src="l.ogv" type=''></video> -->
+
+		<script>
+
+			var AMOUNT = 100;
+			var container, stats;
+			var camera, scene, renderer;
+			
+			var video, image, imageContext,
+			imageReflection, imageReflectionContext, imageReflectionGradient,
+			texture, textureReflection;
+
+			var mesh;
+			var ray, projector;
+			
+			var cubes = Array();
+			
+			var mouse2D, mouse3D;
+
+			var mouseX = 0;
+			var mouseY = 0;
+
+			var windowHalfX = window.innerWidth / 2;
+			var windowHalfY = window.innerHeight / 2;
+
+			init();
+
+			animate();	
+			placeGrid();
+			placeTestCubes();	
+
+			function placeGrid(){
+				
+			}
+			
+			function placeTestCubes(){
+			//começar do x -500 e y 500.
+			var cinza = 0xcfcfcf;
+			var cinzaescuro = 0x333333;
+			var roxo = 0x990066;
+			var vermelho = 0xfd0000;
+			var amarelo = 0xEFc02b;
+			var laranja = 0xFF9900;
+			
+			//PRIMEIRA coluna
+				createCubeInPosition(1, -500,500,0, 20, 20, "#myModal", cinza);
+				createCubeInPosition(2, -470,500,0, 20, 20, "#", cinza);
+				createCubeInPosition(3, -500,440,0, 50, 50, "#", cinza);
+				createCubeInPosition(4, -500,380,0, 50, 50, "#", cinza);
+				createCubeInPosition(5, -500,380,0, 50, 50, "#", cinza);
+	
+				createCubeInPosition(6, -500,320,0, 50, 50, "#", cinzaescuro);
+				createCubeInPosition(7, -500,260,0, 50, 50, "#", vermelho);
+				createCubeInPosition(8, -500,230,0, 50, 20, "#", vermelho);
+				createCubeInPosition(9, -500,230,0, 50, 20, "#", vermelho);
+				createCubeInPosition(10, -500,200,0, 50, 20, "#", amarelo);
+				
+				createCubeInPosition(11, -500,110,0, 50, 50, "#", cinza);
+				
+				createCubeInPosition(12, -500,50,0, 50, 50, "#", roxo);
+				createCubeInPosition(13, -480,20,0, 50, 20, "#", cinza);
+				createCubeInPosition(14, -500,-10,0, 50, 20, "#", cinza);
+				
+			//2 coluna
+			
+				createCubeInPosition(16, -440,500,0, 50, 20, "#", cinza);
+				createCubeInPosition(17, -440,440,0, 50, 50, "#", cinza);
+				
+				createCubeInPosition(18, -440,380,0, 50, 50, "#", cinzaescuro);
+				
+				createCubeInPosition(19, -440,320,0, 50, 50, "#", vermelho);
+				
+				createCubeInPosition(16, -440,290,0, 50, 20, "#", amarelo);
+				createCubeInPosition(16, -440,260,0, 50, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -440,230,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -410,230,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -440,200,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -410,200,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(25, -440,170,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -410,170,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -440,140,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -410,140,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(25, -440,110,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -410,110,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -440,80,0, 50, 20, "#", amarelo);
+				
+				createCubeInPosition(19, -410,20,0, 50, 50, "#", vermelho);
+				createCubeInPosition(15, -440,-10,0, 20, 20, "#", cinza);
+
+			//3 coluna
+				createCubeInPosition(19, -380,500,0, 50, 20, "#", cinza);
+				createCubeInPosition(20, -380,440,0, 50, 50, "#", cinzaescuro);
+				
+				createCubeInPosition(20, -380,380,0, 50, 50, "#", roxo);
+				
+				createCubeInPosition(16, -380,350,0, 50, 20, "#", amarelo);
+				createCubeInPosition(16, -380,320,0, 50, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -380,290,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -350,290,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -380,260,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -350,260,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -380,230,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -350,230,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -380,200,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -350,200,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -380,170,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -350,170,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -380,140,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -350,140,0, 20, 20, "#", laranja);
+				
+				createCubeInPosition(16, -380,110,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -350,110,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -380,80,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -350,80,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -350,50,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -380, -10 ,0, 20, 20, "#", cinza);
+				createCubeInPosition(16, -350, -10 ,0, 50, 20, "#", cinza);
+				
+				
+			//4 coluna	
+				createCubeInPosition(21, -320,500,0, 50, 20, "#", cinza);
+				createCubeInPosition(44, -320,440,0, 50, 50, "#", roxo);
+				createCubeInPosition(44, -320,380,0, 50, 50, "#", vermelho);
+				
+				createCubeInPosition(44, -320,350,0, 50, 20, "#", vermelho);
+				
+				createCubeInPosition(16, -320,320,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -290,320,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -320,290,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -290,290,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -320,260,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -290,260,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -320,230,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -290,230,0, 20, 20, "#", laranja);
+				
+				createCubeInPosition(16, -320,200,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -290,200,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -320,170,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -290,170,0, 20, 20, "#", laranja);
+				
+				createCubeInPosition(16, -320,140,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -290,140,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -320,110,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -290,110,0, 20, 20, "#", laranja);
+				
+				createCubeInPosition(16, -320,80,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -290,80,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -320,50,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -290,50,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -320,20,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -290,20,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -290,-10,0, 20, 20, "#", cinza);
+				
+			//5coluna
+				createCubeInPosition(22, -260,470,0, 50, 50, "#", cinzaescuro);
+				createCubeInPosition(45, -260,410,0, 50, 50, "#", roxo);
+				
+				createCubeInPosition(44, -260,380,0, 50, 20, "#", vermelho);
+				createCubeInPosition(44, -260,350,0, 50, 20, "#", vermelho);
+				
+				createCubeInPosition(44, -260,320,0, 50, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -260,290,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -230,290,0, 50, 20, "#", amarelo);
+				createCubeInPosition(16, -260,260,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -230,260,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -260,230,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -230,230,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -260,200,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -230,200,0, 20, 20, "#", laranja);
+				
+				createCubeInPosition(16, -260,170,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -230,170,0, 20, 20, "#", laranja);
+				
+				createCubeInPosition(16, -260,140,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -230,140,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -260,110,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -230,110,0, 20, 20, "#", laranja);
+				
+				createCubeInPosition(16, -260,80,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -230,80,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -260,50,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -230,50,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -260,20,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -230,-10,0, 50, 50, "#", cinza);
+				createCubeInPosition(16, -260,-10,0, 20, 20, "#", cinza);
+				
+				//6 coluna
+				createCubeInPosition(23, -170,500,0, 50, 20, "#", cinza);
+				createCubeInPosition(46, -200,440,0, 50, 50, "#", cinzaescuro);
+				
+				createCubeInPosition(46, -200,380,0, 50, 50, "#", roxo);
+				
+				createCubeInPosition(46, -200,350,0, 50, 20, "#", vermelho);
+				createCubeInPosition(46, -200,320,0, 50, 20, "#", amarelo);
+			
+				createCubeInPosition(46, -170,290,0, 50, 20, "#", vermelho);
+				
+				createCubeInPosition(46, -200,260,0, 50, 20, "#", amarelo);
+
+				createCubeInPosition(46, -200,230,0, 20, 20, "#", amarelo);
+				createCubeInPosition(46, -170,230,0, 50, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -200,200,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -170,200,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -200,170,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -170,170,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(16, -200,140,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -170,140,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -200,110,0, 20, 20, "#", laranja);
+				createCubeInPosition(16, -170,110,0, 20, 20, "#", amarelo);
+
+				createCubeInPosition(16, -200,80,0, 20, 20, "#", amarelo);
+				createCubeInPosition(16, -170,80,0, 50, 20, "#", vermelho);
+
+				createCubeInPosition(16, -200,50,0, 50, 20, "#", vermelho);
+
+				createCubeInPosition(16, -170,-10,0, 20, 20, "#", cinza);
+
+				//6coluna
+				createCubeInPosition(24, -110,470,0, 50, 50, "#", cinza);
+				createCubeInPosition(47, -140,410,0, 80, 50, "#", laranja);
+				createCubeInPosition(47, -140,350,0, 80, 50, "#", roxo);
+				
+				createCubeInPosition(47, -140,320,0, 50, 20, "#", vermelho);
+				
+				createCubeInPosition(47, -140,260,0, 50, 20, "#", vermelho);
+				
+				createCubeInPosition(47, -110,230,0, 50, 20, "#", vermelho);
+				
+				createCubeInPosition(47, -140,200,0, 50, 20, "#", amarelo);
+				
+				createCubeInPosition(47, -140,170,0, 20, 20, "#", amarelo);
+				createCubeInPosition(47, -110,170,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(47, -140,140,0, 20, 20, "#", amarelo);
+				createCubeInPosition(47, -110,140,0, 50, 20, "#", vermelho);
+				
+				createCubeInPosition(47, -140,110,0, 50, 20, "#", amarelo);
+				
+				
+				createCubeInPosition(47, -140,20,0, 50, 50, "#", vermelho);
+				createCubeInPosition(47, -140,-10,0, 50, 20, "#", cinza);
+			
+
+				//7 coluna
+				createCubeInPosition(25, -50,500,0, 20, 20, "#", cinza);
+				createCubeInPosition(25, -50,380,0, 20, 20, "#", cinza);	
+				createCubeInPosition(25, -80,290,0, 50, 50, "#", cinzaescuro);
+				createCubeInPosition(25, -80,170,0, 50, 50, "#", roxo);
+				createCubeInPosition(25, -80,80,0, 50, 50, "#", roxo);
+				createCubeInPosition(25, -80,20,0, 50, 50, "#", cinzaescuro);
+				createCubeInPosition(25, -50,-10,0, 20, 20, "#", cinza);
+				
+				//8 coluna				
+				
+				createCubeInPosition(26, -20,500,0, 50, 20, "#", cinzaescuro);
+				createCubeInPosition(27, -20,470,0, 50, 20, "#", cinza);
+				createCubeInPosition(27, -20,440,0, 50, 20, "#", cinza);
+
+				createCubeInPosition(27, -20,410,0, 50, 20, "#", cinza);
+				createCubeInPosition(27, -20,380,0, 50, 50, "#", cinza);
+				createCubeInPosition(27, -20,350,0, 50, 20, "#", cinza);
+
+				createCubeInPosition(27, -20,290,0, 50, 50, "#", cinza);
+
+				createCubeInPosition(27, -20,230,0, 80, 50, "#", laranja);
+				
+				createCubeInPosition(27, -20,200,0, 20, 20, "#", cinza);
+				createCubeInPosition(27, 10,170,0, 50, 50, "#", cinza);
+
+				createCubeInPosition(27, -20,110,0, 50, 50, "#", cinza);
+				
+				createCubeInPosition(27, -20,50,0, 50, 50, "#", cinza);
+				
+				createCubeInPosition(27, -20,-10,0, 50, 50, "#", cinza);
+
+				
+				//9 coluna
+				createCubeInPosition(28, 40,500,0, 20, 20, "#", cinza);
+				
+				createCubeInPosition(28, 40,470,0, 20, 20, "#", cinza);
+				createCubeInPosition(28, 70,470,0, 20, 20, "#", cinza);
+				
+				createCubeInPosition(28, 40,440,0, 20, 20, "#", cinza);
+				createCubeInPosition(28, 70,440,0, 20, 20, "#", cinza);
+				
+				createCubeInPosition(28, 40,410,0, 20, 20, "#", cinza);
+				createCubeInPosition(28, 70,410,0, 50, 20, "#", cinzaescuro);
+				
+				createCubeInPosition(28, 40,380,0, 50, 20, "#", cinza);
+				//the big one
+				createCubeInPosition(28, 40, 290,0, 80, 80, "#", vermelho);
+				
+				createCubeInPosition(28, 70,230,0, 50, 50, "#", cinza);
+				
+				createCubeInPosition(28, 70,200,0, 50, 20, "#", cinza);
+				createCubeInPosition(28, 70,170,0, 50, 20, "#", cinza);
+				
+				createCubeInPosition(28, 40,110,0, 50, 50, "#", cinza);
+				createCubeInPosition(28, 40,80,0, 50, 20, "#", cinza);
+				createCubeInPosition(28, 40,20,0, 50, 50, "#", cinza);
+				
+				createCubeInPosition(28, 70,-10,0, 50, 20, "#", cinza);
+				
+				
+				//8 coluna
+				createCubeInPosition(29, 100,500,0, 20, 20, "#", cinza);
+				
+				createCubeInPosition(29, 100,440,0, 20, 20, "#", cinza);
+				
+				createCubeInPosition(29, 100,380,0, 20, 20, "#", cinza);
+				
+				createCubeInPosition(28, 100,140,0, 50, 20, "#", cinza);
+				createCubeInPosition(28, 100,110,0, 50, 20, "#", cinza);
+				createCubeInPosition(28, 100,80,0, 50, 20, "#", cinza);
+				createCubeInPosition(28, 100,50,0, 50, 20, "#", cinza);
+				
+				createCubeInPosition(28, 100,20,0, 50, 20, "#", cinzaescuro);
+				
+				createCubeInPosition(28, 130,-10,0, 20, 20, "#", cinza);
+				
+				//9 coluna
+				createCubeInPosition(30, 160,500,0, 20, 20, "#", cinza);
+				createCubeInPosition(30, 160,470,0, 50, 20, "#", cinzaescuro);
+				
+				createCubeInPosition(30, 130,470,0, 20, 20, "#", cinza);
+				createCubeInPosition(30, 130,440,0, 20, 20, "#", cinza);
+				createCubeInPosition(30, 130,410,0, 20, 20, "#", cinza);
+				createCubeInPosition(30, 130,380,0, 20, 20, "#", cinza);
+				createCubeInPosition(30, 130,350,0, 20, 20, "#", cinza);
+				
+				createCubeInPosition(30, 130,290,0, 20, 20, "#", cinza);
+				createCubeInPosition(30, 130,260,0, 20, 20, "#", cinza);
+				createCubeInPosition(30, 130,230,0, 50, 20, "#", cinzaescuro);
+				
+				createCubeInPosition(30, 130, 170, 0, 50, 20, "#", cinza);
+				
+				
+				//10 coluna
+				createCubeInPosition(31, 190,500,0, 20, 20, "#", cinza);
+					
+				createCubeInPosition(31, 160,410,0, 50, 50, "#", cinzaescuro);
+				createCubeInPosition(31, 160,380,0, 50, 20, "#", cinzaescuro);
+					
+				createCubeInPosition(31, 160,350,0, 20, 20, "#", cinza);
+				createCubeInPosition(31, 190,350,0, 20, 20, "#", cinza);
+				createCubeInPosition(31, 160,320,0, 20, 20, "#", cinza);
+				createCubeInPosition(31, 190,320,0, 20, 20, "#", cinza);
+				
+				createCubeInPosition(31, 160,290,0, 20, 20, "#", cinza);
+				
+				createCubeInPosition(31, 160,260,0, 20, 20, "#", cinza);
+				createCubeInPosition(31, 190,260,0, 20, 20, "#", cinza);
+				
+				
+				createCubeInPosition(31, 160,200,0, 50, 20, "#", cinzaescuro);
+				
+				createCubeInPosition(31, 190,170,0, 20, 20, "#", cinza);
+				createCubeInPosition(31, 190,140,0, 20, 20, "#", cinza);
+				
+				
+				createCubeInPosition(31, 160,110,0, 20, 20, "#", cinza);
+				createCubeInPosition(31, 190,110,0, 20, 20, "#", cinza);
+				createCubeInPosition(31, 160,80,0, 20, 20, "#", cinza);
+				createCubeInPosition(31, 190,80,0, 20, 20, "#", cinza);
+				createCubeInPosition(31, 160,50,0, 20, 20, "#", cinza);
+				createCubeInPosition(31, 190,50,0, 20, 20, "#", cinza);
+				
+				createCubeInPosition(31, 190,-10,0, 50, 50, "#", cinza);
+				
+				
+				//11 coluna
+				createCubeInPosition(32, 220,470,0, 50, 50, "#", roxo);
+				createCubeInPosition(32, 220,410,0, 80, 50, "#", roxo);
+				
+				createCubeInPosition(32, 220,350,0, 50, 50, "#", cinzaescuro);
+				createCubeInPosition(32, 220,290,0, 50, 50, "#", cinza);
+				
+				createCubeInPosition(32, 220,260,0, 50, 20, "#", cinza);
+				
+				
+				createCubeInPosition(32, 220,230,0, 20, 20, "#", cinza);
+				createCubeInPosition(32, 220,200,0, 20, 20, "#", cinza);
+				
+				createCubeInPosition(32, 250,200,0, 50, 50, "#", cinza);
+				
+				createCubeInPosition(32, 250,170,0, 50, 20, "#", cinza);
+				
+				createCubeInPosition(32, 220,140,0, 50, 20, "#", cinzaescuro);
+								
+				createCubeInPosition(32, 220,110,0, 20, 20, "#", cinza);
+				createCubeInPosition(32, 250,110,0, 20, 20, "#", cinza);
+				createCubeInPosition(32, 220,80,0, 20, 20, "#", cinza);
+				createCubeInPosition(32, 250,80,0, 20, 20, "#", cinza);
+				
+				createCubeInPosition(32, 250,50,0, 20, 20, "#", cinza);
+				
+				createCubeInPosition(32, 220,20,0, 20, 20, "#", cinza);
+				createCubeInPosition(32, 220,-10,0, 20, 20, "#", cinza);
+				
+				createCubeInPosition(32, 250,-10,0, 50, 20, "#", cinza);
+				
+				//12 coluna
+				createCubeInPosition(33, 280,470,0, 50, 50, "#", vermelho);
+				
+				createCubeInPosition(33, 280,350,0, 50, 50, "#", roxo);
+				createCubeInPosition(33, 280,290,0, 50, 50, "#", cinzaescuro);
+				
+				createCubeInPosition(33, 280,110,0, 50, 50, "#", cinza);
+				
+				createCubeInPosition(33, 280,80,0, 20, 20, "#", cinza);
+				createCubeInPosition(33, 280,50,0, 20, 20, "#", cinza);
+				createCubeInPosition(33, 280,20,0, 20, 20, "#", cinza);
+				
+				//13 coluna
+				createCubeInPosition(34, 340,500,0, 50, 20, "#", vermelho);
+				//14 coluna
+				createCubeInPosition(35, 400,500,0, 50, 20, "#", amarelo);
+				//8 coluna
+				createCubeInPosition(36, 430,500,0, 20, 20, "#", amarelo);
+				//8 coluna
+				createCubeInPosition(37, 460,500,0, 20, 20, "#", amarelo);
+				//8 coluna
+				createCubeInPosition(38, 490,500,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(39, 520,500,0, 20, 20, "#", amarelo);
+				//8 coluna
+				createCubeInPosition(40, 550,500,0, 20, 20, "#", laranja);
+				createCubeInPosition(41, 580,500,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(40, 550,470,0, 20, 20, "#", laranja);
+				createCubeInPosition(41, 580,470,0, 20, 20, "#", laranja);
+				createCubeInPosition(40, 550,440,0, 20, 20, "#", laranja);
+				createCubeInPosition(41, 580,440,0, 20, 20, "#", laranja);
+				
+				createCubeInPosition(40, 550,410,0, 20, 20, "#", laranja);
+				createCubeInPosition(41, 580,410,0, 20, 20, "#", laranja);
+				createCubeInPosition(40, 550,380,0, 20, 20, "#", laranja);
+				createCubeInPosition(41, 580,380,0, 20, 20, "#", laranja);
+				
+				createCubeInPosition(40, 550,350,0, 20, 20, "#", laranja);
+				createCubeInPosition(41, 580,350,0, 20, 20, "#", laranja);
+				createCubeInPosition(40, 550,320,0, 20, 20, "#", laranja);
+				createCubeInPosition(41, 580,320,0, 20, 20, "#", laranja);
+				
+				createCubeInPosition(40, 550,290,0, 20, 20, "#", amarelo);
+				createCubeInPosition(41, 580,290,0, 20, 20, "#", amarelo);
+				createCubeInPosition(40, 550,260,0, 20, 20, "#", amarelo);
+				createCubeInPosition(41, 580,260,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(40, 550,230,0, 20, 20, "#", amarelo);
+				createCubeInPosition(41, 580,230,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(40, 550,230,0, 50, 20, "#", amarelo);
+				createCubeInPosition(40, 550,200,0, 50, 20, "#", amarelo);
+				createCubeInPosition(40, 550,170,0, 50, 20, "#", amarelo);
+				
+				createCubeInPosition(40, 550,140,0, 50, 20, "#", amarelo);
+				
+				createCubeInPosition(40, 550,110,0, 50, 20, "#", amarelo);
+				
+				
+				createCubeInPosition(40, 550,50,0, 50, 50, "#", roxo);
+				
+				createCubeInPosition(40, 550,-10,0, 50, 50, "#", cinza);
+				
+				//ultima coluna
+				createCubeInPosition(42, 610,500,0, 20, 20, "#", amarelo);
+				createCubeInPosition(43, 640,500,0, 20, 20, "#", amarelo);
+				createCubeInPosition(42, 610,470,0, 20, 20, "#", amarelo);
+				createCubeInPosition(43, 640,470,0, 20, 20, "#", amarelo);
+			
+				createCubeInPosition(42, 610,440,0, 20, 20, "#", laranja);
+				createCubeInPosition(43, 640,440,0, 20, 20, "#", amarelo);
+				createCubeInPosition(42, 610,410,0, 20, 20, "#", laranja);
+				createCubeInPosition(43, 640,410,0, 20, 20, "#", laranja);
+				
+				createCubeInPosition(42, 610,380,0, 20, 20, "#", laranja);
+				createCubeInPosition(43, 640,380,0, 20, 20, "#", amarelo);
+				createCubeInPosition(42, 610,350,0, 20, 20, "#", amarelo);
+				createCubeInPosition(43, 640,350,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(42, 610,320,0, 20, 20, "#", amarelo);
+				createCubeInPosition(43, 640,320,0, 20, 20, "#", amarelo);
+				createCubeInPosition(42, 610,290,0, 20, 20, "#", amarelo);
+				createCubeInPosition(43, 640,290,0, 20, 20, "#", amarelo);
+				
+				createCubeInPosition(42, 610,260,0, 20, 20, "#", amarelo);
+				createCubeInPosition(43, 640,260,0, 20, 20, "#", amarelo);
+				createCubeInPosition(42, 610,230,0, 20, 20, "#", amarelo);
+				createCubeInPosition(43, 640,230,0, 20, 20, "#", amarelo);
+			
+				createCubeInPosition(42, 610,200,0, 50, 20, "#", amarelo);
+				createCubeInPosition(42, 610,170,0, 50, 20, "#", amarelo);
+				
+				createCubeInPosition(42, 610,140,0, 50, 20, "#", vermelho);
+				createCubeInPosition(42, 610,110,0, 50, 20, "#", vermelho);
+				
+				createCubeInPosition(42, 610,50,0, 50, 50, "#", roxo);
+				
+				createCubeInPosition(42, 610,20,0, 50, 20, "#", cinza);
+				createCubeInPosition(42, 610,-10,0, 50, 20, "#", cinza);
+			//finalmente acabou	
+				
+			}
+		
+			function createCubeInPosition(id, x, y, z, sizeX, sizeY, actionURL, color){
+				var geometry = new THREE.CubeGeometry( sizeX, sizeY, 35 );
+
+				
+				//adicionar aqui cenas
+				
+				for ( var i = 0; i < geometry.faces.length; i ++ ) {
+				//green cubes are created
+					geometry.faces[ i ].color.setHex( color );
+					
+					
+				}
+
+				var material = new THREE.MeshLambertMaterial( { vertexColors: THREE.FaceColors } );
+
+				var voxel = new THREE.Mesh( geometry, material );
+				voxel.position.x = Math.floor( x / 5 ) * 5 + (sizeX /2);
+
+			//	voxel.position.y = Math.floor( y / 50 ) * 50 + 25;
+				voxel.position.y = Math.floor( y / 5 ) * 5 + (sizeY / 2);
+				voxel.position.z = Math.floor( z / 5 ) * 5 + 25;
+				voxel.matrixAutoUpdate = false;
+				voxel.updateMatrix();
+				scene.add( voxel );
+				
+				voxel.action = actionURL;
+				voxel.id = id;
+				
+				cubes.push(voxel);
+			}
+			
+
+			function init() {
+				
+				//init mice
+				mouse2D = new THREE.Vector3 (0, 10000, 0.5);
+				
+				
+
+				container = document.createElement( 'div' );
+				document.body.appendChild( container );
+
+				var info = document.createElement( 'div' );
+				info.style.position = 'absolute';
+				info.style.top = '10px';
+				info.style.width = '100%';
+				info.style.textAlign = 'center';
+				info.style.color = 'white';
+				info.innerHTML = 'Living Wall';
+				container.appendChild( info );
+
+				camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 10000 );
+				camera.position.z = 1900;
+				
+				ray = new THREE.Ray(camera.position, null);
+				projector = new THREE.Projector();
+
+				scene = new THREE.Scene();
+				
+				video = document.getElementById( 'wall' );
+
+				image = document.createElement( 'canvas' );
+				image.width = 480;
+				image.height = 204;
+
+				imageContext = image.getContext( '2d' );
+				imageContext.fillStyle = '#000000';
+				imageContext.fillRect( 0, 0, 480, 204 );
+
+				texture = new THREE.Texture( image );
+				texture.minFilter = THREE.LinearFilter;
+				texture.magFilter = THREE.LinearFilter;
+
+				var material = new THREE.MeshBasicMaterial( { map: texture, overdraw: true } );
+				
+				imageReflection = document.createElement( 'canvas' );
+				imageReflection.width = 480;
+				imageReflection.height = 204;
+
+				imageReflectionContext = imageReflection.getContext( '2d' );
+				imageReflectionContext.fillStyle = '#000000';
+				imageReflectionContext.fillRect( 0, 0, 480, 204 );
+
+				imageReflectionGradient = imageReflectionContext.createLinearGradient( 0, 0, 0, 204 );
+				imageReflectionGradient.addColorStop( 0.2, 'rgba(240, 240, 240, 1)' );
+				imageReflectionGradient.addColorStop( 1, 'rgba(240, 240, 240, 0.8)' );
+
+				textureReflection = new THREE.Texture( imageReflection );
+				textureReflection.minFilter = THREE.LinearFilter;
+				textureReflection.magFilter = THREE.LinearFilter;
+
+				var materialReflection = new THREE.MeshBasicMaterial( { map: textureReflection, side: THREE.BackSide, overdraw: true } );
+				
+				var plane = new THREE.PlaneGeometry( 480, 204, 4, 4 );
+
+				mesh = new THREE.Mesh( plane, material );
+				mesh.scale.x = mesh.scale.y = mesh.scale.z = 1.5;
+				scene.add(mesh);
+
+				//mesh = new THREE.Mesh( plane, materialReflection );
+				mesh.position.y = -306;
+				mesh.rotation.x = - Math.PI;
+				mesh.scale.x = mesh.scale.y = mesh.scale.z = 1.5;
+				scene.add( mesh );
+
+				//
+
+				var separation = 150;
+				var amountx = 10;
+				var amounty = 10;
+
+				var PI2 = Math.PI * 2;
+				var material = new THREE.ParticleCanvasMaterial( {
+
+					color: 0x0808080,
+					program: function ( context ) {
+
+						context.beginPath();
+						context.arc( 0, 0, 1, 0, PI2, true );
+						context.closePath();
+						context.fill();
+
+					}
+
+				} );
+				
+				/*
+				for ( var ix = 0; ix < amountx; ix++ ) {
+
+					for ( var iy = 0; iy < amounty; iy++ ) {
+
+						particle = new THREE.Particle( material );
+						particle.position.x = ix * separation - ( ( amountx * separation ) / 2 );
+						particle.position.y = -153
+						particle.position.z = iy * separation - ( ( amounty * separation ) / 2 );
+						scene.add( particle );
+						
+						createCubeInPosition(ix * separation - ( ( amountx * separation ) / 2 ), iy * separation - ( ( amounty * separation ) / 2), 0,  50, "#");
+
+					}
+
+				}
+				*/
+				
+				renderer = new THREE.CanvasRenderer();
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+				container.appendChild( renderer.domElement );
+
+				stats = new Stats();
+				stats.domElement.style.position = 'absolute';
+				stats.domElement.style.top = '0px';
+				//container.appendChild( stats.domElement );
+
+				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+				document.addEventListener( 'mousedown', onMouseDown, false);
+				//
+				
+				window.addEventListener( 'resize', onWindowResize, false );
+			}
+
+			function onWindowResize() {
+
+				windowHalfX = window.innerWidth / 2;
+				windowHalfY = window.innerHeight / 2;
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}
+
+			function onDocumentMouseMove( event ) {
+				
+				mouse2D.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+				mouse2D.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+				mouse3D = projector.unprojectVector( mouse2D.clone(), camera );
+				ray.direction = mouse3D.subSelf( camera.position ).normalize();
+				
+				mouseX = ( event.clientX - windowHalfX );
+				mouseY = ( event.clientY - windowHalfY ) * 0.2;
+
+			}
+
+			//
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+				render();
+				stats.update();
+
+			}
+			
+			function onMouseDown(event){
+				event.preventDefault();
+				
+				//ray.direction = mouse3D.subSelf( camera.position ).normalize();
+
+				var intersects = ray.intersectObjects(cubes);
+				if (intersects.length > 0){
+					x = event.x;
+					y = event.y;
+					$('#myModal').modal('show');
+					document.getElementById("write-here").innerHTML= ("Deseja adquirir o cubo: " + intersects[0].object.id);
+					console.log('intersection');
+					window.top.location = intersects[0].object.action;
+				}
+			}
+
+			function render() {
+
+				camera.position.x += ( mouseX - camera.position.x ) * 0.05;
+				camera.position.y += ( - mouseY - camera.position.y ) * 0.05;
+				camera.lookAt( scene.position );
+
+				imageReflectionContext.drawImage( image, 0, 0 );
+				imageReflectionContext.fillStyle = imageReflectionGradient;
+				imageReflectionContext.fillRect( 0, 0, 480, 204 );
+
+				renderer.render( scene, camera );
+
+			}
+
+		</script>
+
+	</body>
+</html>

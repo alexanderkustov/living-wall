@@ -1,0 +1,15 @@
+Olá Pessoas!
+
+já estive aqui um pouco a olhar para o código, estive a tentar usar alguma coisa do género
+
+$('#cv').click(function(e) { ... });
+
+Mas acho que não funciona com o canvas porque por mais voltas que dê não acontece nada. Também eu não percebo muito de canvas...
+
+Como isto não funciona no cube tentei passar para detectar uma acção no próprio canvas, mas ele não tem id nenhum para usar o getElementById, tentei usar o getElementsByTagName("canvas")[0] para detectar o click e analisar o x e y, com base nisso podiamos despoletar a acção, mas também não estou a ter sucesso
+
+####UPDATE####
+
+coloquei uma função 'piresfunction' que loga na consola a posição do clique dentro do canvas, agora é só reconhecer as faces do cubo.
+
+podem encontrar algo aqui que faz isso: http://jsfiddle.net/9WWqG/2/ é um ponto de partida. Tenho que sair agora. Beijinhos!

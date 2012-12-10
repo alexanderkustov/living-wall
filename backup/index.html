@@ -17,12 +17,10 @@
 		<script src="js/three.min.js"></script>
 		<script src="js/soldcubes.js"></script>
 		<script src="js/cubes.js"></script>
-		<script src="js/detectmobilebrowser.js"></script>
 		
-
 		<style>
 			body {
-				background-color: #171717;
+				background-color: #3d3d3d;
 				margin: 0px;
 				overflow: hidden;
 			}			
@@ -35,24 +33,18 @@
 		
 		<div class="sidebar">
 			<h4>Mural ISCTE 40 anos solidários</h4>
-			<div class="fb-like" data-href="http://muralsolidario.iscte-iul.pt" data-send="true" data-layout="button_count" data-width="320" data-show-faces="true"></div>
-		<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=428511433865935";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<hr>
-			<a class="btn" style="width: 260px;"href="mobile.html">Versão Mobile</a><br />
-		
-			<p>Para mais informações contacte: <a href='mailto:marina.ventura@iscte.pt'>marina.ventura@iscte.pt</a><br />Os estudantes portugueses precisam do seu apoio. Os estudantes do ISCTE – Instituto Universitário de Lisboa precisam do apoio de todos aqueles que sejam sensíveis a proporcionar condições dignas jovens empreendedores e empenhados na mudança poderem concluir os seus cursos.</p>
+			<a class="btn" style="width: 260px;"href="mobile.html">Versão Mobile</a>
+			<p>No ano em que festejamos os 40 anos de existência do ISCTE queremos reforçar o papel da Universidade na transformação da sociedade. Sempre acreditamos ser nossa missão contribuir para o desenvolvimento de pessoas criativas e capazes de resolver os problemas que a sociedade enfrenta.<p>
 
-			<p>Podemos pensar que o estado social deveria criar condições para que os jovens desfavorecidos continuassem a ter condições dignas para estudarem. Podemos. Mas também podemos pensar que cada um de nós é o estado social, que cada um de nós pode ajudar a formar as mentes brilhantes que ajudarão este país a crescer e a torná-lo capaz de absorver todos os que se formam nas nossas universidades.</p>
+			<p>Os estudantes portugueses precisam do seu apoio. Os estudantes do ISCTE – Instituto Universitário de Lisboa precisam do apoio de todos aqueles que sejam sensíveis a proporcionar condições dignas jovens empreendedores e empenhados na mudança poderem concluir os seus cursos.<p>
 
-			<p>É por isso que pedimos aos estudantes de ontem que sejam solidários com os estudantes de hoje. Os nossos alunos querem um futuro e, se todos contribuirmos vamos concretizar o sonho de termos uma sociedade diferente. Compre uma peça neste mural e tenha a certeza de que vai ajudar a construir realidades a partir dos sonhos deles.</p>
+			<p>Atualmente temos estudantes que não vêm à escola porque não têm dinheiro para as senhas de transportes públicos, que precisam de um apoio extra para poderem almoçar, que reprovam porque passam horas demais a trabalhar em part-times. Podemos pensar que o estado social deveria criar condições para que os jovens desfavorecidos continuassem a ter condições dignas para estudarem. Podemos. Mas também podemos pensar que cada um de nós é o estado social, que cada um de nós pode ajudar a formar as mentes brilhantes que ajudarão este país a crescer e a torná-lo capaz de absorver todos os que se formam nas nossas universidades.<p>
+
+			<p>É por isso que pedimos aos estudantes de ontem que sejam solidários com os estudantes de hoje. Os nossos alunos querem um futuro e, se todos contribuirmos vamos concretizar o sonho de termos uma sociedade diferente. Compre uma peça neste mural e tenha a certeza de que vai ajudar a construir realidades a partir dos sonhos deles.<p>
+
+			<hr>
 		
+			<p>Este mural ficará exposto no ISCTE – Instituto Universitário de Lisboa a partir do dia 14 de dezembro de 2012. Junte o seu nome a esta iniciativa de angariação de bolsas de emergência que vão permitir os estudantes carenciados do ISCTE terminarem os seus cursos com dignidade. Compre um tijolo e contribua para o crescimento deste mural solidário feito a pensar nos que mais precisam de si.</p>
 		</div>
 
 		
@@ -69,6 +61,8 @@
 						<button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
 					</div>
 				</div>
+
+		<!--<video id="wall" style="display:none"><source src="l.mp4" type=''><source src="l.ogv" type=''></video> -->
 
 		<script>
 			
@@ -103,7 +97,7 @@
 		
 			function createCubeInPosition(id, x, y, z, sizeX, sizeY, color, cost){
 				//Create cube geometry
-				var geometry = new THREE.CubeGeometry( sizeX, sizeY, 20 );
+				var geometry = new THREE.CubeGeometry( sizeX, sizeY, 35 );
 				//Define cube basic colour
 				for ( var i = 0; i < geometry.faces.length; i ++ ) {
 					geometry.faces[ i ].color.setHex( color );
@@ -226,10 +220,10 @@
 					}else{
 					document.getElementById("myModalLabel").innerHTML= ("Compre a peça nº " +pressedCube.id + " por " + pressedCube.cost + "€.");
 						document.getElementById("write-here").innerHTML= (	
-						"Se desejar comprá-la, faça a transferência do valor indicado para a conta:<br /><strong>0035 0368 00000004230 55</strong> <br /> e preencha por favor o seguinte formulário para podermos enviar o recibo ao abrigo da <a target='_blank' href='beneficio.pdf'>lei dos donativos e mecenato</a>:" 
-						+ "<br />Pedimos que faça <a href='beneficio.pdf'>download do comprovativo da transferência</a><br />" +
+						"Se desejar comprá-la, faça a transferência do valor indicado para a conta:<br /><strong>0035 0368 00000004230 55</strong> <br /> e preencha por favor o seguinte formulário para podermos enviar o recibo ao abrigo da lei dos donativos e mecenato:" 
+						+ "Pedimos que faça <a href='beneficio.pdf'>download do comprovativo da transferência</a><br />" +
 
-					 "<form method='POST' action='http://alexkustov.com/three/mobilesend.php'>"
+					 "<form method='POST' action='mobilesend.php'>"
 					+ "<label>Nome Completo</label> <input type='text' name='nome' /> <br /> "
 				    + "<label>E-mail</label> <input type='email' name='email_from' /> <br /> "
 					+ "	<label>NIF</label>  <input type='number' name='nif' required/> <br />" 
@@ -247,11 +241,10 @@
 					+ "		</select>  <br />"
 					+ " <label>Apoio com</label> <div class='input-prepend'> <span class='add-on'>&euro;</span>  "
 					+ " <input class='span1' id='prependedInput' name='valor' type='text' placeholder='" + pressedCube.cost + "'></div> "
-					+ " <label>Nº Peça</label>	<input class='span1' type='text' name='numero' value='"+ pressedCube.id +"'/>"
-					+ "	<br \><input class='btn btn-info' value='Submeter' type='submit'> "
+					+ "	<input class='btn btn-info' value='Submeter' type='submit'> "
 					+ "	</form> " 
 						
-+"<br />Para mais informações contacte: <a href='mailto:marina.ventura@iscte.pt'>marina.ventura@iscte.pt</a><br />Em breve receberá a sua confirmação e passará a ter o seu nome na peça comprada virtualmente assim como, na peça exposta no campus do ISCTE-IUL");
++"<br />Em breve receberá a sua confirmação e passará a ter o seu nome na peça comprada virtualmente assim como, na peça exposta no campus do ISCTE-IUL");
 					}
 				mouseDisabled = 1;
 				
@@ -269,11 +262,8 @@
 				camera.position.y += ( - mouseY - camera.position.y ) * 0.05;
 				//Look at target and render
 				camera.lookAt( scene.position );
-			
 				renderer.render( scene, camera );
-			
 			}
-
 		</script>
 
 	</body>
