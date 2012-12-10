@@ -28,22 +28,18 @@
 			}			
 		</style>
 	</head>
-	<body>
-		<script>
-			var x=0, y=0;
-		</script>
-		
+	<body>		
 		<div class="sidebar">
 			<h4>Mural ISCTE 40 anos solidários</h4>
 			<div class="fb-like" data-href="http://muralsolidario.iscte-iul.pt" data-send="true" data-layout="button_count" data-width="320" data-show-faces="true"></div>
 		<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=428511433865935";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=428511433865935";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
 <hr>
 			<a class="btn" style="width: 260px;"href="mobile.html">Versão Mobile</a><br />
 		
@@ -55,7 +51,6 @@
 		
 		</div>
 
-		
 		
 		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					<div class="modal-header">
@@ -222,7 +217,7 @@
 					var cubeLocationInDatabase = databaseContainsCube(pressedCube.id);
 					//Check if cube was bought
 					if (cubeLocationInDatabase != -1){
-						document.getElementById("write-here").innerHTML= ("Obrigado: " + database[cubeLocationInDatabase][1]);
+						document.getElementById("write-here").innerHTML= ("Reservado: " + database[cubeLocationInDatabase][1]);
 					}else{
 					document.getElementById("myModalLabel").innerHTML= ("Compre a peça nº " +pressedCube.id + " por " + pressedCube.cost + "€.");
 						document.getElementById("write-here").innerHTML= (	
