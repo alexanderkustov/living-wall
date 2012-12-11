@@ -218,7 +218,8 @@
 					var cubeLocationInDatabase = databaseContainsCube(pressedCube.id);
 					//Check if cube was bought
 					if (cubeLocationInDatabase != -1){
-						document.getElementById("write-here").innerHTML= ("Reservado: " + database[cubeLocationInDatabase][1]);
+						document.getElementById("myModalLabel").innerHTML= ("Peça " + pressedCube.id + " adquirida por " + pressedCube.cost + "€.");
+						document.getElementById("write-here").innerHTML= ("Obrigado " + database[cubeLocationInDatabase][1] +"!");
 					}else{
 					document.getElementById("myModalLabel").innerHTML= ("Compre a peça nº " +pressedCube.id + " por " + pressedCube.cost + "€.");
 						document.getElementById("write-here").innerHTML= (	
