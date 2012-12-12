@@ -12,7 +12,7 @@ var crp = 75;
 // Amarelos Rectangulares Pequenos - 85x210mm - 100€
 var arp = 100;
 // Cinza Rectangulares Grande - 85x210mm - 200€
-var crg = 200;
+var crg = 300;
 // Vermelhos Rectangulares Pequenos - 85x210mm - 250€
 var vrp = 250;
 // Roxo Quadrangulares - 210x210mm - 500€
@@ -25,13 +25,13 @@ var lrg = 4500;
 var rr = 9500;
 
  
- lqp = 50, crp = 75, arp = 100, rrp = 4500, rrg = 9500, vq = 1000, rq = 500, vrp = 250, crp = 200;
+ lqp = 50, crp = 75, arp = 100, rrp = 4500, rrg = 9500, vq = 1000, rq = 500, vrp = 250;
 
-	createCubeInPosition(1, -500,500,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(2, -470,500,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(3, -500,440,0, 50, 50,  cinza, crp);
-	createCubeInPosition(4, -500,380,0, 50, 50,  cinza, crp);
-	createCubeInPosition(5, -500,380,0, 50, 50,  cinza, crp);
+	createCubeInPosition("C001", -500,500,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C002", -470,500,0, 20, 20,  cinza, cqp);
+	createCubeInPosition(3, -500,440,0, 50, 50,  cinza, crg);
+	createCubeInPosition(4, -500,380,0, 50, 50,  cinza, crg);
+	createCubeInPosition(5, -500,380,0, 50, 50,  cinza, crg);
 
 	createCubeInPosition(6, -500,320,0, 50, 50,  cinzaescuro, 0);
 	createCubeInPosition(7, -500,260,0, 50, 50,  vermelho, vq);
@@ -39,7 +39,7 @@ var rr = 9500;
 
 	createCubeInPosition(10, -500,200,0, 50, 20,  amarelo, arp);
 
-	createCubeInPosition(11, -500,110,0, 50, 50,  cinza, crp);
+	createCubeInPosition(11, -500,110,0, 50, 50,  cinza, crg);
 
 	createCubeInPosition(12, -500,50,0, 50, 50,  roxo, rq);
 	createCubeInPosition(13, -480,20,0, 50, 20,  cinza, crp);
@@ -47,8 +47,8 @@ var rr = 9500;
 
 	//2 coluna
 
-	createCubeInPosition(15, -440,500,0, 50, 20,  cinza, crp);
-	createCubeInPosition(16, -440,440,0, 50, 50,  cinza, crp);
+	createCubeInPosition("C003", -440,500,0, 50, 20,  cinza, crp);
+	createCubeInPosition(16, -440,440,0, 50, 50,  cinza, crg);
 
 	createCubeInPosition(17, -440,380,0, 50, 50,  cinzaescuro, 0);
 
@@ -77,7 +77,7 @@ var rr = 9500;
 	createCubeInPosition(33, -440,-10,0, 20, 20,  cinza, cqp);
 
 	//3 coluna
-	createCubeInPosition(34, -380,500,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C004", -380,500,0, 50, 20,  cinza, crp);
 	createCubeInPosition(35, -380,440,0, 50, 50,  cinzaescuro, 0);
 
 	createCubeInPosition(36, -380,380,0, 50, 50,  roxo, rq);
@@ -112,7 +112,7 @@ var rr = 9500;
 
 
 	//4 coluna	
-	createCubeInPosition(58, -320,500,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C005", -320,500,0, 50, 20,  cinza, crp);
 	createCubeInPosition(59, -320,440,0, 50, 50,  roxo, rq);
 	createCubeInPosition(60, -320,380,0, 50, 50,  vermelho, vq);
 	createCubeInPosition(61, -320,350,0, 50, 20,  vermelho, vrp);
@@ -148,7 +148,7 @@ var rr = 9500;
 	createCubeInPosition(84, -290,-10,0, 20, 20,  cinza, cqp);
 
 	//5coluna
-	createCubeInPosition(85, -260,470,0, 50, 50,  cinzaescuro, 0);
+	createCubeInPosition("C006", -260,470,0, 50, 50,  cinzaescuro, 0);
 	createCubeInPosition(86, -260,410,0, 50, 50,  roxo, rq);
 
 	createCubeInPosition(87, -260,380,0, 50, 20,  vermelho, vrp);
@@ -180,11 +180,11 @@ var rr = 9500;
 	createCubeInPosition(107, -230,50,0, 20, 20,  amarelo, aqp);
 
 	createCubeInPosition(108, -260,20,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(109, -230,-10,0, 50, 50,  cinza, crp);
+	createCubeInPosition(109, -230,-10,0, 50, 50,  cinza, crg);
 	createCubeInPosition(110, -260,-10,0, 20, 20,  cinza, cqp);
 
 	//6 coluna
-	createCubeInPosition(111, -170,500,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C007", -170,500,0, 50, 20,  cinza, crp);
 	createCubeInPosition(112, -200,440,0, 50, 50,  cinzaescuro, 0);
 
 	createCubeInPosition(113, -200,380,0, 50, 50,  roxo, rq);
@@ -217,7 +217,7 @@ var rr = 9500;
 	createCubeInPosition(131, -170,-10,0, 20, 20,  cinza, cqp);
 
 	//6coluna
-	createCubeInPosition(132, -110,470,0, 50, 50,  cinza, crp);
+	createCubeInPosition("C008", -110,470,0, 50, 50,  cinza, crg);
 	createCubeInPosition(133, -140,410,0, 80, 50,  laranja, lrg);
 	createCubeInPosition(134, -140,350,0, 80, 50,  roxo, rr);
 
@@ -243,7 +243,7 @@ var rr = 9500;
 
 
 	//7 coluna
-	createCubeInPosition(146, -50,500,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C009", -50,500,0, 20, 20,  cinza, cqp);
 	createCubeInPosition(147, -50,380,0, 20, 20,  cinza, cqp);	
 	createCubeInPosition(148, -80,290,0, 50, 50,  cinzaescuro, 0);
 	createCubeInPosition(149, -80,170,0, 50, 50,  roxo, rq);
@@ -258,21 +258,21 @@ var rr = 9500;
 	createCubeInPosition(155, -20,440,0, 50, 20,  cinza, crp);
 
 	createCubeInPosition(156, -20,410,0, 50, 20,  cinza, crp);
-	createCubeInPosition(157, -20,380,0, 50, 50,  cinza, crp);
+	createCubeInPosition(157, -20,380,0, 50, 50,  cinza, crg);
 	createCubeInPosition(158, -20,350,0, 50, 20,  cinza, crp);
 
-	createCubeInPosition(159, -20,290,0, 50, 50,  cinza, crp);
+	createCubeInPosition(159, -20,290,0, 50, 50,  cinza, crg);
 
 	createCubeInPosition(160, -20,230,0, 80, 50,  laranja, lrg);
 
 	createCubeInPosition(161, -20,200,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(162, 10,170,0, 50, 50,  cinza, crp);
+	createCubeInPosition(162, 10,170,0, 50, 50,  cinza, crg);
 
-	createCubeInPosition(163, -20,110,0, 50, 50,  cinza, crp);
+	createCubeInPosition(163, -20,110,0, 50, 50,  cinza, crg);
 
-	createCubeInPosition(164, -20,50,0, 50, 50,  cinza, crp);
+	createCubeInPosition(164, -20,50,0, 50, 50,  cinza, crg);
 
-	createCubeInPosition(165, -20,-10,0, 50, 50,  cinza, crp);
+	createCubeInPosition(165, -20,-10,0, 50, 50,  cinza, crg);
 
 
 	//9 coluna
@@ -291,14 +291,14 @@ var rr = 9500;
 	//the big one
 	createCubeInPosition(174, 40, 290,0, 80, 80,  vermelho, 15000);
 
-	createCubeInPosition(175, 70,230,0, 50, 50,  cinza, crp);
+	createCubeInPosition(175, 70,230,0, 50, 50,  cinza, crg);
 
 	createCubeInPosition(176, 70,200,0, 50, 20,  cinza, crp);
 	createCubeInPosition(177, 70,170,0, 50, 20,  cinza, crp);
 
-	createCubeInPosition(178, 40,110,0, 50, 50,  cinza, crp);
+	createCubeInPosition(178, 40,110,0, 50, 50,  cinza, crg);
 	createCubeInPosition(179, 40,80,0, 50, 20,  cinza, crp);
-	createCubeInPosition(180, 40,20,0, 50, 50,  cinza, crp);
+	createCubeInPosition(180, 40,20,0, 50, 50,  cinza, crg);
 
 	createCubeInPosition(181, 70,-10,0, 50, 20,  cinza, crp);
 
@@ -366,7 +366,7 @@ var rr = 9500;
 	createCubeInPosition(219, 160,50,0, 20, 20,  cinza, cqp);
 	createCubeInPosition(220, 190,50,0, 20, 20,  cinza, cqp);
 
-	createCubeInPosition(221, 160,-10,0, 50, 50,  cinza, crp);
+	createCubeInPosition(221, 160,-10,0, 50, 50,  cinza, crg);
 
 	//estes sao em baixo mas ja perdi a coluna
 	createCubeInPosition(222, 310,50,0, 20, 20,  cinza, cqp);
@@ -377,7 +377,7 @@ var rr = 9500;
 	createCubeInPosition(225, 220,410,0, 80, 50,  roxo, rr);
 
 	createCubeInPosition(226, 220,350,0, 50, 50,  cinzaescuro, 0);
-	createCubeInPosition(227, 220,290,0, 50, 50,  cinza, crp);
+	createCubeInPosition(227, 220,290,0, 50, 50,  cinza, crg);
 
 	createCubeInPosition(228, 220,260,0, 50, 20,  cinza, crp);
 
@@ -385,7 +385,7 @@ var rr = 9500;
 	createCubeInPosition(229, 220,230,0, 20, 20,  cinza, cqp);
 	createCubeInPosition(230, 220,200,0, 20, 20,  cinza, cqp);
 
-	createCubeInPosition(231, 250,200,0, 50, 50,  cinza, crp);
+	createCubeInPosition(231, 250,200,0, 50, 50,  cinza, crg);
 
 	createCubeInPosition(232, 250,170,0, 50, 20,  cinza, crp);
 
@@ -416,7 +416,7 @@ var rr = 9500;
 
 	createCubeInPosition(247, 310,170,0, 80, 50,  laranja, lrg);
 
-	createCubeInPosition(248, 280,110,0, 50, 50,  cinza, crp);
+	createCubeInPosition(248, 280,110,0, 50, 50,  cinza, crg);
 
 	createCubeInPosition(249, 280,80,0, 20, 20,  cinza, cqp);
 	createCubeInPosition(250, 280,50,0, 20, 20,  cinza, cqp);
@@ -436,9 +436,9 @@ var rr = 9500;
 	createCubeInPosition(258, 340,290,0, 50, 50,  vermelho, vq);
 	createCubeInPosition(259, 340,230,0, 50, 50,  roxo, rq);
 
-	createCubeInPosition(260, 340,110,0, 50, 50,  cinza, crp);
+	createCubeInPosition(260, 340,110,0, 50, 50,  cinza, crg);
 	createCubeInPosition(261, 340,80,0, 50, 20,  cinzaescuro, 0);
-	createCubeInPosition(262, 340,20,0, 50, 50,  cinza, crp);
+	createCubeInPosition(262, 340,20,0, 50, 50,  cinza, crg);
 	createCubeInPosition(263, 370,-10,0, 20, 20,  cinza, cqp);
 
 	//14 coluna
@@ -457,7 +457,7 @@ var rr = 9500;
 	createCubeInPosition(273, 400,170,0, 50, 50,  roxo, rq);
 
 	createCubeInPosition(274, 400,110,0, 50, 50,  cinzaescuro, 0);
-	createCubeInPosition(275, 400,50,0, 50, 50,  cinza, crp);
+	createCubeInPosition(275, 400,50,0, 50, 50,  cinza, crg);
 
 	createCubeInPosition(276, 400,20,0, 50, 20,  cinzaescuro, 0);
 
@@ -494,7 +494,7 @@ var rr = 9500;
 	createCubeInPosition(298, 460,140,0, 50, 50,  vermelho, vq);
 	createCubeInPosition(299, 460,80,0, 50, 50,  roxo, rq);
 
-	createCubeInPosition(300, 460,20,0, 50, 50,  cinza, crp);
+	createCubeInPosition(300, 460,20,0, 50, 50,  cinza, crg);
 
 	createCubeInPosition(301, 460,-10,0, 20, 20,  cinza, cqp);
 	createCubeInPosition(302, 490,-10,0, 20, 20,  cinza, cqp);
@@ -563,13 +563,13 @@ var rr = 9500;
 
 	//createCubeInPosition(348, 580,230,0, 50, 20,  amarelo, arp);
 	createCubeInPosition(349, 580,200,0, 50, 20,  amarelo, arp);
-	createCubeInPosition(350, 580,170,0, 50, 20,  amarelo, arp);
+	//createCubeInPosition(350, 580,170,0, 50, 20,  amarelo, arp); afinal não existe LOL
 
 	createCubeInPosition(351, 580,140,0, 50, 20,  amarelo, arp);
 	createCubeInPosition(352, 580,110,0, 50, 20,  vermelho, vrp);
 
 	createCubeInPosition(353, 580,50,0, 50, 50,  roxo, rq);
-	createCubeInPosition(354, 580,-10,0, 50, 50,  cinza, crp);
+	createCubeInPosition(354, 580,-10,0, 50, 50,  cinza, crg);
 
 	//ultima coluna
 	createCubeInPosition(355, 640,500,0, 20, 20,  amarelo, aqp);

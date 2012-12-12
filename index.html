@@ -41,7 +41,9 @@
 <img src="logos/foto.JPG" class="img-rounded"/>
 			<hr>
 			<a class="btn" style="width: 260px;"href="mobile.html">Versão Mobile</a><br />
-		
+			
+			<p><strong>Para selecionar a peça que deseja adquirir, basta clicar com o rato em cima de um dos tijolos e introduzir os seus dados.</strong></p>
+			
 			<p>Para mais informações contacte: <a href='mailto:marina.ventura@iscte.pt'>marina.ventura@iscte.pt</a></p>
 			<hr>
 			<p>Os estudantes portugueses precisam do seu apoio. Os estudantes do ISCTE – Instituto Universitário de Lisboa precisam do apoio de todos aqueles que sejam sensíveis a proporcionar condições dignas jovens empreendedores e empenhados na mudança poderem concluir os seus cursos.</p>
@@ -221,10 +223,14 @@
 						document.getElementById("myModalLabel").innerHTML= ("Peça " + pressedCube.id + " adquirida por " + pressedCube.cost + "€.");
 						document.getElementById("write-here").innerHTML= ("Obrigado " + database[cubeLocationInDatabase][1] +"!");
 					}else{
-					document.getElementById("myModalLabel").innerHTML= ("Compre a peça nº " +pressedCube.id + " por " + pressedCube.cost + "€.");
+					 if (pressedCube.cost != 10) {
+						document.getElementById("myModalLabel").innerHTML= ("Compre a peça nº " +pressedCube.id + " por " + pressedCube.cost + "€.");
+					} else {
+						document.getElementById("myModalLabel").innerHTML= ("Compre a peça nº " +pressedCube.id + " por " + pressedCube.cost + "€ mínimo.");
+					}
 						document.getElementById("write-here").innerHTML= (	
 						"Se desejar comprá-la, faça a transferência do valor indicado para a conta:<br /><strong>0035 0368 00000004230 55</strong> <br /> e preencha por favor o seguinte formulário para podermos enviar o recibo ao abrigo da <a target='_blank' href='beneficio.pdf'>lei dos donativos e mecenato</a>:" 
-						+ "<br />Pedimos que faça <a href='beneficio.pdf'>download do comprovativo da transferência</a><br />" +
+					+
 
 					 "<form method='POST' action='http://alexkustov.com/three/mobilesend.php'>"
 					+ "<label>Nome Completo</label> <input type='text' name='nome' /> <br /> "
@@ -248,7 +254,7 @@
 					+ "	<br \><input class='btn btn-info' value='Submeter' type='submit'> "
 					+ "	</form> " 
 						
-+"<br />Para mais informações contacte: <a href='mailto:marina.ventura@iscte.pt'>marina.ventura@iscte.pt</a><br />Em breve receberá a sua confirmação e passará a ter o seu nome na peça comprada virtualmente assim como, na peça exposta no campus do ISCTE-IUL");
++"<strong>Envie o comprovativo da transferência para <a href='mailto:marina.ventura@iscte.pt'>marina.ventura@iscte.pt</a>. Após recepcionado esse comprovativo, receberá uma confirmação de que o seu nome está na peça escolhida por si.</strong>");
 					}
 				mouseDisabled = 1;
 				
