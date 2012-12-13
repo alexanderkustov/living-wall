@@ -29,585 +29,590 @@ var rr = 9500;
 
 	createCubeInPosition("C001", -500,500,0, 20, 20,  cinza, cqp);
 	createCubeInPosition("C002", -470,500,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(3, -500,440,0, 50, 50,  cinza, crg);
-	createCubeInPosition(4, -500,380,0, 50, 50,  cinza, crg);
-	createCubeInPosition(5, -500,380,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C016", -500,440,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C031", -500,380,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C043", -500,380,0, 50, 50,  cinza, crg);
 
-	createCubeInPosition(6, -500,320,0, 50, 50,  cinzaescuro, 0);
-	createCubeInPosition(7, -500,260,0, 50, 50,  vermelho, vq);
-	createCubeInPosition(8, -500,230,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("C043", -500,320,0, 50, 50,  cinzaescuro, 0);
+	createCubeInPosition("V008", -500,260,0, 50, 50,  vermelho, vq);
+	createCubeInPosition("V011", -500,230,0, 50, 20,  vermelho, vrp);
 
-	createCubeInPosition(10, -500,200,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A030", -500,200,0, 50, 20,  amarelo, arp);
 
-	createCubeInPosition(11, -500,110,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C74", -500,110,0, 50, 50,  cinza, crg);
 
-	createCubeInPosition(12, -500,50,0, 50, 50,  roxo, rq);
-	createCubeInPosition(13, -480,20,0, 50, 20,  cinza, crp);
-	createCubeInPosition(14, -500,-10,0, 50, 20,  cinza, crp);
+	createCubeInPosition("R008", -500,50,0, 50, 50,  roxo, rq);
+	createCubeInPosition("C109", -480,20,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C120", -500,-10,0, 50, 20,  cinza, crp);
 
 	//2 coluna
 
 	createCubeInPosition("C003", -440,500,0, 50, 20,  cinza, crp);
-	createCubeInPosition(16, -440,440,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C017", -440,440,0, 50, 50,  cinza, crg);
 
-	createCubeInPosition(17, -440,380,0, 50, 50,  cinzaescuro, 0);
+	createCubeInPosition("C032", -440,380,0, 50, 50,  cinzaescuro, 0);
 
-	createCubeInPosition(18, -440,320,0, 50, 50,  vermelho, vq);
-	createCubeInPosition(19, -440,290,0, 50, 20,  amarelo, arp);
-	createCubeInPosition(20, -440,260,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("V003", -440,320,0, 50, 50,  vermelho, vq);
+	createCubeInPosition("A007", -440,290,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A014", -440,260,0, 50, 20,  amarelo, arp);
 
-	createCubeInPosition(21, -440,230,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(22, -410,230,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A022", -440,230,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A023", -410,230,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(23, -440,200,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(24, -410,200,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A031", -440,200,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A032", -410,200,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(25, -440,170,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(26, -410,170,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A038", -440,170,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A039", -410,170,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(27, -440,140,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(28, -410,140,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A044", -440,140,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A045", -410,140,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(29, -440,110,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(30, -410,110,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A048", -440,110,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A049", -410,110,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(31, -440,80,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A053", -440,80,0, 50, 20,  amarelo, arp);
 
-	createCubeInPosition(32, -410,20,0, 50, 50,  vermelho, vq);
-	createCubeInPosition(33, -440,-10,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("V015", -410,20,0, 50, 50,  vermelho, vq);
+	createCubeInPosition("C121", -440,-10,0, 20, 20,  cinza, cqp);
 
 	//3 coluna
 	createCubeInPosition("C004", -380,500,0, 50, 20,  cinza, crp);
-	createCubeInPosition(35, -380,440,0, 50, 50,  cinzaescuro, 0);
+	createCubeInPosition("C018", -380,440,0, 50, 50,  cinzaescuro, 0);
 
-	createCubeInPosition(36, -380,380,0, 50, 50,  roxo, rq);
+	createCubeInPosition("R003", -380,380,0, 50, 50,  roxo, rq);
 
-	createCubeInPosition(37, -380,350,0, 50, 20,  amarelo, arp);
-	createCubeInPosition(38, -380,320,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A001", -380,350,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A002", -380,320,0, 50, 20,  amarelo, arp);
 
-	createCubeInPosition(39, -380,290,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(40, -350,290,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(41, -380,260,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(42, -350,260,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A008", -380,290,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A009", -350,290,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A015", -380,260,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A016", -350,260,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(43, -380,230,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(44, -350,230,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(45, -380,200,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(46, -350,200,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A024", -380,230,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A025", -350,230,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A033", -380,200,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A034", -350,200,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(47, -380,170,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(48, -350,170,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(49, -380,140,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(50, -350,140,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("A040", -380,170,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("L007", -350,170,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("A046", -380,140,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("L013", -350,140,0, 20, 20,  laranja, lqp);
 
-	createCubeInPosition(51, -380,110,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(52, -350,110,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(53, -380,80,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(54, -350,80,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A050", -380,110,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("L020", -350,110,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("A054", -380,80,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A055", -350,80,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(55, -350,50,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A057", -350,50,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(56, -380, -10 ,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(57, -350, -10 ,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C122", -380, -10 ,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C123", -350, -10 ,0, 50, 20,  cinza, crp);
 
 
 	//4 coluna	
 	createCubeInPosition("C005", -320,500,0, 50, 20,  cinza, crp);
-	createCubeInPosition(59, -320,440,0, 50, 50,  roxo, rq);
-	createCubeInPosition(60, -320,380,0, 50, 50,  vermelho, vq);
-	createCubeInPosition(61, -320,350,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("R001", -320,440,0, 50, 50,  roxo, rq);
+	createCubeInPosition("V001", -320,380,0, 50, 50,  vermelho, vq);
+	createCubeInPosition("V004", -320,350,0, 50, 20,  vermelho, vrp);
 
-	createCubeInPosition(62, -320,320,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(63, -290,320,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A003", -320,320,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A004", -290,320,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(64, -320,290,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(65, -290,290,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A010", -320,290,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A011", -290,290,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(66, -320,260,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(67, -290,260,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(68, -320,230,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(69, -290,230,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("A017", -320,260,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A018", -290,260,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A026", -320,230,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("L001", -290,230,0, 20, 20,  laranja, lqp);
 
-	createCubeInPosition(70, -320,200,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(71, -290,200,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(72, -320,170,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(73, -290,170,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L003", -320,200,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L004", -290,200,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L008", -320,170,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L009", -290,170,0, 20, 20,  laranja, lqp);
 
-	createCubeInPosition(74, -320,140,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(75, -290,140,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(76, -320,110,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(77, -290,110,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(78, -320,80,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(79, -290,80,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(80, -320,50,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(81, -290,50,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("L014", -320,140,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L015", -290,140,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L021", -320,110,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L022", -290,110,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L026", -320,80,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L027", -290,80,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("A058", -320,50,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A059", -290,50,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(82, -320,20,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(83, -290,20,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A061", -320,20,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A062", -290,20,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(84, -290,-10,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C124", -290,-10,0, 20, 20,  cinza, cqp);
 
 	//5coluna
 	createCubeInPosition("C006", -260,470,0, 50, 50,  cinzaescuro, 0);
-	createCubeInPosition(86, -260,410,0, 50, 50,  roxo, rq);
+	createCubeInPosition("R002", -260,410,0, 50, 50,  roxo, rq);
 
-	createCubeInPosition(87, -260,380,0, 50, 20,  vermelho, vrp);
-	createCubeInPosition(88, -260,350,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("V002", -260,380,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("V005", -260,350,0, 50, 20,  vermelho, vrp);
 
-	createCubeInPosition(89, -260,320,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A005", -260,320,0, 50, 20,  amarelo, arp);
 
-	createCubeInPosition(90, -260,290,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(91, -230,290,0, 50, 20,  amarelo, arp);
-	createCubeInPosition(92, -260,260,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(93, -230,260,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A012", -260,290,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A013", -230,290,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A019", -260,260,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A020", -230,260,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(94, -260,230,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(95, -230,230,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(96, -260,200,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(97, -230,200,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L005", -260,230,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("A027", -230,230,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("L005", -260,200,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L006", -230,200,0, 20, 20,  laranja, lqp);
 
-	createCubeInPosition(98, -260,170,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(99, -230,170,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L010", -260,170,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L011", -230,170,0, 20, 20,  laranja, lqp);
 
-	createCubeInPosition(100, -260,140,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(101, -230,140,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(102, -260,110,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(103, -230,110,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L016", -260,140,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L017", -230,140,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L023", -260,110,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L024", -230,110,0, 20, 20,  laranja, lqp);
 
-	createCubeInPosition(104, -260,80,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(105, -230,80,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(106, -260,50,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(107, -230,50,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("L028", -260,80,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L029", -230,80,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L030", -260,50,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("A060", -230,50,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(108, -260,20,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(109, -230,-10,0, 50, 50,  cinza, crg);
-	createCubeInPosition(110, -260,-10,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("A063", -260,20,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("C110", -230,-10,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C125", -260,-10,0, 20, 20,  cinza, cqp);
 
 	//6 coluna
 	createCubeInPosition("C007", -170,500,0, 50, 20,  cinza, crp);
-	createCubeInPosition(112, -200,440,0, 50, 50,  cinzaescuro, 0);
+	createCubeInPosition("C019", -200,440,0, 50, 50,  cinzaescuro, 0);
 
-	createCubeInPosition(113, -200,380,0, 50, 50,  roxo, rq);
+	createCubeInPosition("R004", -200,380,0, 50, 50,  roxo, rq);
 
-	createCubeInPosition(114, -200,350,0, 50, 20,  vermelho, vrp);
-	createCubeInPosition(115, -200,320,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("V006", -200,350,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("A006", -200,320,0, 50, 20,  amarelo, arp);
 
-	createCubeInPosition(116, -170,290,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("V009", -170,290,0, 50, 20,  vermelho, vrp);
 
-	createCubeInPosition(117, -200,260,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A021", -200,260,0, 50, 20,  amarelo, arp);
 
-	createCubeInPosition(118, -200,230,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(119, -170,230,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A028", -200,230,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A029", -170,230,0, 50, 20,  amarelo, arp);
 
-	createCubeInPosition(120, -200,200,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(121, -170,200,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(122, -200,170,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(123, -170,170,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A035", -200,200,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A036", -170,200,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("L012", -200,170,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("A041", -170,170,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(124, -200,140,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(125, -170,140,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(126, -200,110,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(127, -170,110,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("L018", -200,140,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L019", -170,140,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L025", -200,110,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("A051", -170,110,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(128, -200,80,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(129, -170,80,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("A056", -200,80,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("V014", -170,80,0, 50, 20,  vermelho, vrp);
 
-	createCubeInPosition(130, -200,50,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("V016", -200,50,0, 50, 20,  vermelho, vrp);
 
-	createCubeInPosition(131, -170,-10,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C126", -170,-10,0, 20, 20,  cinza, cqp);
 
 	//6coluna
 	createCubeInPosition("C008", -110,470,0, 50, 50,  cinza, crg);
-	createCubeInPosition(133, -140,410,0, 80, 50,  laranja, lrg);
-	createCubeInPosition(134, -140,350,0, 80, 50,  roxo, rr);
+	createCubeInPosition("L061", -140,410,0, 80, 50,  laranja, lrg);
+	createCubeInPosition("R005", -140,350,0, 80, 50,  roxo, rr);
 
-	createCubeInPosition(135, -140,320,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("V007", -140,320,0, 50, 20,  vermelho, vrp);
 
-	createCubeInPosition(136, -140,260,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("V010", -140,260,0, 50, 20,  vermelho, vrp);
 
-	createCubeInPosition(137, -110,230,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("V012", -110,230,0, 50, 20,  vermelho, vrp);
 
-	createCubeInPosition(138, -140,200,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A037", -140,200,0, 50, 20,  amarelo, arp);
 
-	createCubeInPosition(139, -140,170,0, 20, 20,  amarelo, aqp);
-	// aqui está o quadrado que foi lá para o fundo
+	createCubeInPosition("A042", -140,170,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A043", -110,170,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(141, -140,140,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(142, -110,140,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("A047", -140,140,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("V013", -110,140,0, 50, 20,  vermelho, vrp);
 
-	createCubeInPosition(143, -140,110,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A052", -140,110,0, 50, 20,  amarelo, arp);
 
 
-	createCubeInPosition(144, -140,20,0, 50, 50,  vermelho, vq);
-	createCubeInPosition(145, -140,-10,0, 50, 20,  cinza, crp);
+	createCubeInPosition("V017", -140,20,0, 50, 50,  vermelho, vq);
+	createCubeInPosition("C127", -140,-10,0, 50, 20,  cinza, crp);
 
 
 	//7 coluna
 	createCubeInPosition("C009", -50,500,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(147, -50,380,0, 20, 20,  cinza, cqp);	
-	createCubeInPosition(148, -80,290,0, 50, 50,  cinzaescuro, 0);
-	createCubeInPosition(149, -80,170,0, 50, 50,  roxo, rq);
-	createCubeInPosition(150, -80,80,0, 50, 50,  roxo, rq);
-	createCubeInPosition(151, -80,20,0, 50, 50,  cinzaescuro, 0);
-	createCubeInPosition(152, -50,-10,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C037", -50,380,0, 20, 20,  cinza, cqp);	
+	createCubeInPosition("C048", -80,290,0, 50, 50,  cinzaescuro, 0);
+	createCubeInPosition("R006", -80,170,0, 50, 50,  roxo, rq);
+	createCubeInPosition("R007", -80,80,0, 50, 50,  roxo, rq);
+	createCubeInPosition("C098", -80,20,0, 50, 50,  cinzaescuro, 0);
+	createCubeInPosition("C128", -50,-10,0, 20, 20,  cinza, cqp);
 
 	//8 coluna				
 
-	createCubeInPosition(153, -20,500,0, 50, 20,  cinzaescuro, 0);
-	createCubeInPosition(154, -20,470,0, 50, 20,  cinza, crp);
-	createCubeInPosition(155, -20,440,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C010", -20,500,0, 50, 20,  cinzaescuro, 0);
+	createCubeInPosition("C020", -20,470,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C025", -20,440,0, 50, 20,  cinza, crp);
 
-	createCubeInPosition(156, -20,410,0, 50, 20,  cinza, crp);
-	createCubeInPosition(157, -20,380,0, 50, 50,  cinza, crg);
-	createCubeInPosition(158, -20,350,0, 50, 20,  cinza, crp);
+	//createCubeInPosition("C033", -20,410,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C033", -20,380,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C044", -20,350,0, 50, 20,  cinza, crp);
 
-	createCubeInPosition(159, -20,290,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C049", -20,290,0, 50, 50,  cinza, crg);
 
-	createCubeInPosition(160, -20,230,0, 80, 50,  laranja, lrg);
+	createCubeInPosition("L062", -20,230,0, 80, 50,  laranja, lrg);
 
-	createCubeInPosition(161, -20,200,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(162, 10,170,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C065", -20,200,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C066", 10,170,0, 50, 50,  cinza, crg);
 
-	createCubeInPosition(163, -20,110,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C075", -20,110,0, 50, 50,  cinza, crg);
 
-	createCubeInPosition(164, -20,50,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C088", -20,50,0, 50, 50,  cinza, crg);
 
-	createCubeInPosition(165, -20,-10,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C111", -20,-10,0, 50, 50,  cinza, crg);
 
 
 	//9 coluna
-	createCubeInPosition(166, 40,500,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C011", 40,500,0, 20, 20,  cinza, cqp);
 
-	createCubeInPosition(167, 40,470,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(168, 70,470,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C021", 40,470,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C022", 70,470,0, 20, 20,  cinza, cqp);
 
-	createCubeInPosition(169, 40,440,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(170, 70,440,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C026", 40,440,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C027", 70,440,0, 20, 20,  cinza, cqp);
 
-	createCubeInPosition(171, 40,410,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(172, 70,410,0, 50, 20,  cinzaescuro, 0);
+	createCubeInPosition("C034", 40,410,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C035", 70,410,0, 50, 20,  cinzaescuro, 0);
 
-	createCubeInPosition(173, 40,380,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C038", 40,380,0, 50, 20,  cinza, crp);
 	//the big one
-	createCubeInPosition(174, 40, 290,0, 80, 80,  vermelho, 15000);
+	createCubeInPosition("V018", 40, 290,0, 80, 80,  vermelho, 15000);
 
-	createCubeInPosition(175, 70,230,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C055", 70,230,0, 50, 50,  cinza, crg);
 
-	createCubeInPosition(176, 70,200,0, 50, 20,  cinza, crp);
-	createCubeInPosition(177, 70,170,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C067", 70,200,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C070", 70,170,0, 50, 20,  cinza, crp);
 
-	createCubeInPosition(178, 40,110,0, 50, 50,  cinza, crg);
-	createCubeInPosition(179, 40,80,0, 50, 20,  cinza, crp);
-	createCubeInPosition(180, 40,20,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C076", 40,110,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C089", 40,80,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C099", 40,20,0, 50, 50,  cinza, crg);
 
-	createCubeInPosition(181, 70,-10,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C129", 70,-10,0, 50, 20,  cinza, crp);
 
 
 	//8 coluna
-	createCubeInPosition(182, 100,500,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C012", 100,500,0, 20, 20,  cinza, cqp);
 
-	createCubeInPosition(183, 100,440,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C023", 100,440,0, 20, 20,  cinza, cqp);
 
-	createCubeInPosition(184, 100,380,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C028", 100,380,0, 20, 20,  cinza, cqp);
 
-	createCubeInPosition(185, 100,140,0, 50, 20,  cinza, crp);
-	createCubeInPosition(186, 100,110,0, 50, 20,  cinza, crp);
-	createCubeInPosition(187, 100,80,0, 50, 20,  cinza, crp);
-	createCubeInPosition(188, 100,50,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C029", 100,140,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C036", 100,110,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C039", 100,80,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C040", 100,50,0, 50, 20,  cinza, crp);
 
-	createCubeInPosition(189, 100,20,0, 50, 20,  cinzaescuro, 0);
+	createCubeInPosition("C112", 100,20,0, 50, 20,  cinzaescuro, 0);
 
-	createCubeInPosition(190, 130,-10,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C130", 130,-10,0, 20, 20,  cinza, cqp);
 
 	//9 coluna
-	createCubeInPosition(191, 160,500,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(192, 160,470,0, 50, 20,  cinzaescuro, 0);
+	
+	
 
-	createCubeInPosition(193, 130,470,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(194, 130,440,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(195, 130,410,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(196, 130,380,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(197, 130,350,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C023", 130,470,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C029", 130,440,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C036", 130,410,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C040", 130,380,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C045", 130,350,0, 20, 20,  cinza, cqp);
 
-	createCubeInPosition(198, 130,290,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(199, 130,260,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(200, 130,230,0, 50, 20,  cinzaescuro, 0);
+	createCubeInPosition("C053", 130,290,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C056", 130,260,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C061", 130,230,0, 50, 20,  cinzaescuro, 0);
 
-	createCubeInPosition(201, 130, 170, 0, 50, 20,  cinza, crp);
+	createCubeInPosition("C071", 130, 170, 0, 50, 20,  cinza, crp);
 
 
 	//10 coluna
-	createCubeInPosition(202, 190,500,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C013", 160,500,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C014", 190,500,0, 20, 20,  cinza, cqp); 
 
-	createCubeInPosition(203, 160,410,0, 50, 50,  cinzaescuro, 0);
-	createCubeInPosition(204, 160,380,0, 50, 20,  cinzaescuro, 0);
+	createCubeInPosition("C024", 160,470,0, 50, 20,  cinzaescuro, 0);
+	createCubeInPosition("C030", 160,410,0, 50, 50,  cinzaescuro, 0);
+	createCubeInPosition("C041", 160,380,0, 50, 20,  cinzaescuro, 0);
 
-	createCubeInPosition(205, 160,350,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(206, 190,350,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(207, 160,320,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(208, 190,320,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C046", 160,350,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C047", 190,350,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C050", 160,320,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C051", 190,320,0, 20, 20,  cinza, cqp);
 
-	createCubeInPosition(209, 160,290,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C054", 160,290,0, 20, 20,  cinza, cqp);
 
-	createCubeInPosition(210, 160,260,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(211, 190,260,0, 20, 20,  cinza, cqp);
-
-
-	createCubeInPosition(212, 160,200,0, 50, 20,  cinzaescuro, 0);
-
-	createCubeInPosition(213, 190,170,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(214, 190,140,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C057", 160,260,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C058", 190,260,0, 20, 20,  cinza, cqp);
 
 
-	createCubeInPosition(215, 160,110,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(216, 190,110,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(217, 160,80,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(218, 190,80,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(219, 160,50,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(220, 190,50,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C068", 160,200,0, 50, 20,  cinzaescuro, 0);
 
-	createCubeInPosition(221, 160,-10,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C072", 190,170,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C078", 190,140,0, 20, 20,  cinza, cqp);
 
-	//estes sao em baixo mas ja perdi a coluna
-	createCubeInPosition(222, 310,50,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(223, 310,20,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C084", 160,110,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C085", 190,110,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C091", 160,80,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C092", 190,80,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C101", 160,50,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C102", 190,50,0, 20, 20,  cinza, cqp);
 
+	createCubeInPosition("C113", 160,-10,0, 50, 50,  cinza, crg);
+
+	
+	
 	//11 coluna
-	createCubeInPosition(224, 220,470,0, 50, 50,  roxo, rq);
-	createCubeInPosition(225, 220,410,0, 80, 50,  roxo, rr);
+	createCubeInPosition("R009", 220,470,0, 50, 50,  roxo, rq);
+	createCubeInPosition("R019", 220,410,0, 80, 50,  roxo, rr);
 
-	createCubeInPosition(226, 220,350,0, 50, 50,  cinzaescuro, 0);
-	createCubeInPosition(227, 220,290,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C042", 220,350,0, 50, 50,  cinzaescuro, 0);
+	createCubeInPosition("C052", 220,290,0, 50, 50,  cinza, crg);
 
-	createCubeInPosition(228, 220,260,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C059", 220,260,0, 50, 20,  cinza, crp);
 
 
-	createCubeInPosition(229, 220,230,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(230, 220,200,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C062", 220,230,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C069", 220,200,0, 20, 20,  cinza, cqp);
 
-	createCubeInPosition(231, 250,200,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C063", 250,200,0, 50, 50,  cinza, crg);
 
-	createCubeInPosition(232, 250,170,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C073", 250,170,0, 50, 20,  cinza, crp);
 
-	createCubeInPosition(233, 220,140,0, 50, 20,  cinzaescuro, 0);
+	createCubeInPosition("C079", 220,140,0, 50, 20,  cinzaescuro, 0);
 
-	createCubeInPosition(234, 220,110,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(235, 250,110,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(236, 220,80,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(237, 250,80,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C086", 220,110,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C087", 250,110,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C093", 220,80,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C094", 250,80,0, 20, 20,  cinza, cqp);
 
-	createCubeInPosition(238, 250,50,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C103", 250,50,0, 20, 20,  cinza, cqp);
 
-	createCubeInPosition(239, 220,20,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(240, 220,-10,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C114", 220,20,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C131", 220,-10,0, 20, 20,  cinza, cqp);
 
-	createCubeInPosition(241, 250,-10,0, 50, 20,  cinza, crp);
+	//createCubeInPosition(241, 250,-10,0, 50, 20,  cinza, crp); 
 
 	//12 coluna
-	createCubeInPosition(242, 280,470,0, 50, 50,  vermelho, vq);
+	createCubeInPosition("V019", 280,470,0, 50, 50,  vermelho, vq);
 	//roxo grande cima
-	createCubeInPosition(243, 280,320,0, 50, 50,  roxo, rq);
+	createCubeInPosition("R012", 280,320,0, 50, 50,  roxo, rq);
 
-	createCubeInPosition(244, 310,440,0, 50, 20,  vermelho, vrp);
-	createCubeInPosition(245, 310,380,0, 50, 50,  vermelho, vq);
+	createCubeInPosition("V021", 310,440,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("V023", 310,380,0, 50, 50,  vermelho, vq);
 
 
-	createCubeInPosition(246, 280,260,0, 50, 50,  cinzaescuro, 0);
+	createCubeInPosition("C060", 280,260,0, 50, 50,  cinzaescuro, 0);
 
-	createCubeInPosition(247, 310,170,0, 80, 50,  laranja, lrg);
+	createCubeInPosition("L063", 310,170,0, 80, 50,  laranja, lrg);
 
-	createCubeInPosition(248, 280,110,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C080", 280,110,0, 50, 50,  cinza, crg);
 
-	createCubeInPosition(249, 280,80,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(250, 280,50,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(251, 280,20,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C095", 280,80,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C116", 310,20,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C115", 280,20,0, 20, 20,  cinza, cqp);
+	
+	createCubeInPosition("C104", 310,50,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C103", 280,50,0, 20, 20,  cinza, cqp);
+	
 
 	//13 coluna
-	createCubeInPosition(252, 340,500,0, 50, 20,  vermelho, vrp);
-	createCubeInPosition(253, 340,470,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("V020", 340,500,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("A071", 340,470,0, 50, 20,  amarelo, arp);
 
 
-	createCubeInPosition(254, 370,440,0, 50, 20,  vermelho, vrp);
-	createCubeInPosition(255, 370,410,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("V022", 370,440,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("A082", 370,410,0, 50, 20,  amarelo, arp);
 
-	createCubeInPosition(256, 370,380,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A084", 370,380,0, 50, 20,  amarelo, arp);
 
-	createCubeInPosition(257, 340,350,0, 50, 20,  vermelho, vrp);
-	createCubeInPosition(258, 340,290,0, 50, 50,  vermelho, vq);
-	createCubeInPosition(259, 340,230,0, 50, 50,  roxo, rq);
+	createCubeInPosition("V024", 340,350,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("V026", 340,290,0, 50, 50,  vermelho, vq);
+	createCubeInPosition("R011", 340,230,0, 50, 50,  roxo, rq);
 
-	createCubeInPosition(260, 340,110,0, 50, 50,  cinza, crg);
-	createCubeInPosition(261, 340,80,0, 50, 20,  cinzaescuro, 0);
-	createCubeInPosition(262, 340,20,0, 50, 50,  cinza, crg);
-	createCubeInPosition(263, 370,-10,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C082", 340,110,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C096", 340,80,0, 50, 20,  cinzaescuro, 0);
+	createCubeInPosition("C106", 340,20,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C113", 370,-10,0, 20, 20,  cinza, cqp);
 
 	//14 coluna
-	createCubeInPosition(264, 400,500,0, 50, 20,  amarelo, arp);
-	createCubeInPosition(265, 400,470,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A064", 400,500,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A072", 400,470,0, 50, 20,  amarelo, arp);
 
-	createCubeInPosition(266, 430,440,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(267, 430,410,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(268, 430,380,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A078", 430,440,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A083", 430,410,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A085", 430,380,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(269, 400,350,0, 50, 20,  vermelho, vrp);
-	createCubeInPosition(270, 400,320,0, 50, 20,  vermelho, vrp);
-	createCubeInPosition(271, 400,290,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("V025", 400,350,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("V027", 400,320,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("V028", 400,290,0, 50, 20,  vermelho, vrp);
 
-	createCubeInPosition(272, 400,230,0, 50, 50,  roxo, rq);
-	createCubeInPosition(273, 400,170,0, 50, 50,  roxo, rq);
+	createCubeInPosition("R013", 400,230,0, 50, 50,  roxo, rq);
+	createCubeInPosition("R014", 400,170,0, 50, 50,  roxo, rq);
 
-	createCubeInPosition(274, 400,110,0, 50, 50,  cinzaescuro, 0);
-	createCubeInPosition(275, 400,50,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C082", 400,110,0, 50, 50,  cinzaescuro, 0);
+	createCubeInPosition("C097", 400,50,0, 50, 50,  cinza, crg);
 
-	createCubeInPosition(276, 400,20,0, 50, 20,  cinzaescuro, 0);
+	createCubeInPosition("C117", 400,20,0, 50, 20,  cinzaescuro, 0);
 
-	createCubeInPosition(277, 400,-10,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(278, 430,-10,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C134", 400,-10,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C135", 430,-10,0, 20, 20,  cinza, cqp);
 
 
-	//8 coluna
-	createCubeInPosition(279, 460,500,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(280, 490,500,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(281, 460,470,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(282, 490,470,0, 20, 20,  amarelo, aqp);
+	//15 coluna
+	createCubeInPosition("A065", 460,500,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A066", 490,500,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A073", 460,470,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A074", 490,470,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(283, 460,440,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(284, 490,440,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(285, 460,410,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(286, 490,410,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("A079", 460,440,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A080", 490,440,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("L040", 460,410,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L041", 490,410,0, 20, 20,  laranja, lqp);
 
-	createCubeInPosition(287, 460,380,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(288, 490,380,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(289, 460,350,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(290, 490,350,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A086", 460,380,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("L048", 490,380,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("A088", 460,350,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A089", 490,350,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(291, 460,320,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(292, 490,320,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(293, 460,290,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(294, 490,290,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A092", 460,320,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A093", 490,320,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A097", 460,290,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A098", 490,290,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(295, 460,260,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A105", 460,260,0, 50, 20,  amarelo, arp);
 
-	createCubeInPosition(296, 460,230,0, 50, 20,  vermelho, vrp);
-	createCubeInPosition(297, 460,200,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("V029", 460,230,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("V030", 460,200,0, 50, 20,  vermelho, vrp);
 
-	createCubeInPosition(298, 460,140,0, 50, 50,  vermelho, vq);
-	createCubeInPosition(299, 460,80,0, 50, 50,  roxo, rq);
+	createCubeInPosition("V031", 460,140,0, 50, 50,  vermelho, vq);
+	createCubeInPosition("R015", 460,80,0, 50, 50,  roxo, rq);
 
-	createCubeInPosition(300, 460,20,0, 50, 50,  cinza, crg);
+	createCubeInPosition("C107", 460,20,0, 50, 50,  cinza, crg);
 
-	createCubeInPosition(301, 460,-10,0, 20, 20,  cinza, cqp);
-	createCubeInPosition(302, 490,-10,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C136", 460,-10,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C137", 490,-10,0, 20, 20,  cinza, cqp);
 
 
 	//antepenultima coluna
-	createCubeInPosition(303, 520,500,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(304, 550,500,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(305, 520,470,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(306, 550,470,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("A067", 520,500,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A068", 550,500,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A075", 520,470,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("L032", 550,470,0, 20, 20,  laranja, lqp);
 
-	createCubeInPosition(307, 520,440,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(308, 550,440,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(309, 520,410,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(310, 550,410,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L035", 520,440,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L036", 550,440,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L042", 520,410,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L043", 550,410,0, 20, 20,  laranja, lqp);
 
-	createCubeInPosition(311, 520,380,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(312, 550,380,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(313, 520,350,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(314, 550,350,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L049", 520,380,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L050", 550,380,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L054", 520,350,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L055", 550,350,0, 20, 20,  laranja, lqp);
 
-	createCubeInPosition(315, 520,320,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(316, 550,320,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(317, 520,290,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(318, 550,290,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A094", 520,320,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("L058", 550,320,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("A099", 520,290,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A100", 550,290,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(319, 520,260,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(320, 550,260,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(321, 520,230,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(322, 550,230,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A106", 520,260,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A107", 550,260,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("C064", 520,230,0, 20, 20,  cinza, cqp); 
+	createCubeInPosition("A112", 550,230,0, 20, 20,  amarelo, aqp);
+	
+	createCubeInPosition("A117", 520,200,0, 50, 20,  amarelo, arp); // NOVO!!!!
 
-	createCubeInPosition(323, 520,200,0, 50, 20,  amarelo, arp);
-	createCubeInPosition(324, 520,170,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("A120", 520,170,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("V032", 520,140,0, 50, 20,  vermelho, vrp);
 
-	createCubeInPosition(325, 520,110,0, 50, 50,  vermelho, vq);
-	createCubeInPosition(326, 520,50,0, 50, 50,  cinzaescuro, 0);
+	createCubeInPosition("V034", 520,80,0, 50, 50,  vermelho, vq);
+	createCubeInPosition("C108", 520,20,0, 50, 50,  cinzaescuro, 0);
 
-	createCubeInPosition(327, 520,-10,0, 20, 20,  cinza, cqp);
+	createCubeInPosition("C138", 520,-10,0, 20, 20,  cinza, cqp);
 
 	//penultima coluna
-	createCubeInPosition(328, 580,500,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(329, 610,500,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("L031", 580,500,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("A069", 610,500,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(330, 580,470,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(331, 610,470,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(332, 580,440,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(333, 610,440,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L033", 580,470,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L034", 610,470,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L037", 580,440,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L038", 610,440,0, 20, 20,  laranja, lqp);
 
-	createCubeInPosition(334, 580,410,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(335, 610,410,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(336, 580,380,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(337, 610,380,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L044", 580,410,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L045", 610,410,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L051", 580,380,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L052", 610,380,0, 20, 20,  laranja, lqp);
 
-	createCubeInPosition(338, 580,350,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(339, 610,350,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(340, 580,320,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(341, 610,320,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L056", 580,350,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L057", 610,350,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L059", 580,320,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L060", 610,320,0, 20, 20,  laranja, lqp);
 
-	createCubeInPosition(342, 580,290,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(343, 610,290,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(344, 580,260,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(345, 610,260,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A101", 580,290,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A102", 610,290,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A103", 580,260,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A104", 610,260,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(346, 580,230,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(347, 610,230,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A113", 580,230,0, 20, 20,  amarelo, aqp); 
+	createCubeInPosition("A114", 610,230,0, 20, 20,  amarelo, aqp);
 
 	//createCubeInPosition(348, 580,230,0, 50, 20,  amarelo, arp);
-	createCubeInPosition(349, 580,200,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A118", 580,200,0, 50, 20,  amarelo, arp);
 	//createCubeInPosition(350, 580,170,0, 50, 20,  amarelo, arp); afinal não existe LOL
 
-	createCubeInPosition(351, 580,140,0, 50, 20,  amarelo, arp);
-	createCubeInPosition(352, 580,110,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("A122", 580,140,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("V035", 580,110,0, 50, 20,  vermelho, vrp);
 
-	createCubeInPosition(353, 580,50,0, 50, 50,  roxo, rq);
-	createCubeInPosition(354, 580,-10,0, 50, 50,  cinza, crg);
+	createCubeInPosition("R016", 580,50,0, 50, 50,  roxo, rq);
+	createCubeInPosition("C118", 580,-10,0, 50, 50,  cinza, crg);
 
 	//ultima coluna
-	createCubeInPosition(355, 640,500,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(356, 670,500,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(357, 640,470,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(358, 670,470,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A070", 640,500,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("C015", 670,500,0, 20, 20,  cinza, cqp); 
+	createCubeInPosition("A076", 640,470,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A077", 670,470,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(359, 640,440,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(360, 670,440,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(361, 640,410,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(362, 670,410,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L039", 640,440,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("A081", 670,440,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("L046", 640,410,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("L047", 670,410,0, 20, 20,  laranja, lqp);
 
-	createCubeInPosition(363, 640,380,0, 20, 20,  laranja, lqp);
-	createCubeInPosition(364, 670,380,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(365, 640,350,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(366, 670,350,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("L053", 640,380,0, 20, 20,  laranja, lqp);
+	createCubeInPosition("A087", 670,380,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A090", 640,350,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A091", 670,350,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(367, 640,320,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(368, 670,320,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(369, 640,290,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(370, 670,290,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A095", 640,320,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A096", 670,320,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A103", 640,290,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A104", 670,290,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(371, 640,260,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(372, 670,260,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(373, 640,230,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition(374, 670,230,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A110", 640,260,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A111", 670,260,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A115", 640,230,0, 20, 20,  amarelo, aqp);
+	createCubeInPosition("A116", 670,230,0, 20, 20,  amarelo, aqp);
 
-	createCubeInPosition(375, 640,200,0, 50, 20,  amarelo, arp);
-	createCubeInPosition(376, 640,170,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A119", 640,200,0, 50, 20,  amarelo, arp);
+	createCubeInPosition("A121", 640,170,0, 50, 20,  amarelo, arp);
 
-	createCubeInPosition(377, 640,140,0, 50, 20,  vermelho, vrp);
-	createCubeInPosition(378, 640,110,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("V033", 640,140,0, 50, 20,  vermelho, vrp);
+	createCubeInPosition("V036", 640,110,0, 50, 20,  vermelho, vrp);
 
-	createCubeInPosition(379, 640,50,0, 50, 50,  roxo, rq);
+	createCubeInPosition("R017", 640,50,0, 50, 50,  roxo, rq);
 
-	createCubeInPosition(380, 640,20,0, 50, 20,  cinza, crp);
-	createCubeInPosition(381, 640,-10,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C119", 640,20,0, 50, 20,  cinza, crp);
+	createCubeInPosition("C139", 640,-10,0, 50, 20,  cinza, crp);
 	
-	// o tal que dá problemas
-	createCubeInPosition(140, -110,170,0, 20, 20,  amarelo, aqp);
+
+	
 }
