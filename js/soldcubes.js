@@ -31,3 +31,16 @@ database.push(["C130", "Diana Costa ", ""]);
 database.push(["L013", "Maria João Simas", ""]);
 database.push(["C062", "João Pinote ", ""]);
 database.push(["L005", "Luis Meneses", ""]);
+
+// 4º envio
+database.push(["A084", "João Peniche Rosa", ""]);
+database.push(["A116", "Braulio Alturas", ""]);
+database.push(["A111", " ", ""]);
+database.push(["C002", "Maria Glória Lopes ", ""]);
+
+database.push(["C011", "Amigo secreto da Audax ", ""]);
+
+database.push(["A008", "Luciano Leal ", ""]);
+database.push(["C013", "Ana Madeira ", ""]);
+database.push(["C014", "Ana Madeira ", ""]);
+database.push(["C036", "Susana Trigo Cordeiro ", ""]);
