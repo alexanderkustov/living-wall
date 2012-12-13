@@ -3,17 +3,31 @@ var database = Array();
 database.push(["C043", "ISCTE", ""]);database.push(["C032", "ISCTE", ""]);database.push(["C018", "ISCTE", ""]);database.push(["C006", "ISCTE", ""]);database.push(["C019", "ISCTE", ""]);
 database.push(["C048", "ISCTE", ""]);database.push(["C098", "ISCTE", ""]);database.push(["C030", "ISCTE", ""]);database.push(["C042", "ISCTE", ""]);database.push(["C060", "ISCTE", ""]);database.push(["C082", "ISCTE", ""]);database.push(["C108", "ISCTE", ""]);
 
-database.push([153, "FabLab ", ""]);database.push([172, "FabLab ", ""]);database.push([192, "FabLab ", ""]);database.push([204, "FabLab ", ""]);database.push([175, "FabLab ", ""]);database.push([212, "FabLab ", ""]);
-database.push([189, "FabLab ", ""]);database.push([233, "FabLab ", ""]);database.push([276, "FabLab ", ""]);database.push([261, "FabLab ", ""]);
+database.push(["C010", "FabLab ", ""]);database.push(["C035", "FabLab ", ""]);database.push(["C117", "FabLab ", ""]);database.push(["C061", "FabLab ", ""]);database.push(["C096", "FabLab ", ""]);database.push([212, "FabLab ", ""]);
+database.push(["C024", "FabLab ", ""]);database.push(["C041", "FabLab ", ""]);database.push(["C079", "FabLab ", ""]);database.push(["C068", "FabLab ", ""]);
 
-database.push([144, "Almeida Guerra ", ""]);
-database.push([139, "Xiou Wen ", ""]);
-database.push([138, "Zhou Qingjia ", ""]);
-database.push([119, " ", ""]);
-database.push([117, "Di Zhao ", ""]);
-database.push([91, "Shaohuang Ma ", ""]);
-database.push([115, "Tongyan Wang ", ""]);
-database.push([89, "Lihong Gu ", ""]);
-database.push([143, "Hui He", ""]);
-database.push([147, "André Campino", ""]);
-database.push([161, "Daniel Nogueira ", ""]);
+database.push(["V017", "Almeida Guerra ", ""]);
+database.push(["C037", "André Campino", ""]);
+database.push(["A042", "Xiou Wen ", ""]);
+database.push(["A037", "Zhou Qingjia ", ""]);
+database.push(["A029", " ", ""]);
+database.push(["A021", "Di Zhao ", ""]);
+database.push(["A013", "Shaohuang Ma ", ""]);
+database.push(["A006", "Tongyan Wang ", ""]);
+database.push(["A004", "Lihong Gu ", ""]);
+database.push(["A052", "Hui He", ""]);
+database.push(["C065", "Daniel Nogueira ", ""]);
+
+//3º envio
+database.push(["C029", "Sara Eloy ", ""]);
+database.push(["C038", "Pedro Carvalho ", ""]);
+database.push(["L039", "João Batista ", ""]);
+database.push(["C009", "Olinda Gama ", ""]);
+database.push(["C128", "Paula Rodrigues ", ""]);
+database.push(["C069", "Ana Costa ", ""]);
+database.push(["C130", "Diana Costa ", ""]);
+
+//2º envio
+database.push(["L013", "Maria João Simas", ""]);
+database.push(["C062", "João Pinote ", ""]);
+database.push(["L005", "Luis Meneses", ""]);

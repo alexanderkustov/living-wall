@@ -526,10 +526,10 @@ var rr = 9500;
 
 	createCubeInPosition("A106", 520,260,0, 20, 20,  amarelo, aqp);
 	createCubeInPosition("A107", 550,260,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition("C064", 520,230,0, 20, 20,  cinza, cqp); 
+	createCubeInPosition("C064", 520,230,0, 20, 20,  amarelo, cqp); 
 	createCubeInPosition("A112", 550,230,0, 20, 20,  amarelo, aqp);
 	
-	createCubeInPosition("A117", 520,200,0, 50, 20,  amarelo, arp); // NOVO!!!!
+	createCubeInPosition("A117", 520,200,0, 50, 20,  amarelo, arp);
 
 	createCubeInPosition("A120", 520,170,0, 50, 20,  amarelo, arp);
 	createCubeInPosition("V032", 520,140,0, 50, 20,  vermelho, vrp);
@@ -578,7 +578,7 @@ var rr = 9500;
 
 	//ultima coluna
 	createCubeInPosition("A070", 640,500,0, 20, 20,  amarelo, aqp);
-	createCubeInPosition("C015", 670,500,0, 20, 20,  cinza, cqp); 
+	createCubeInPosition("C015", 670,500,0, 20, 20,  amarelo, aqp); 
 	createCubeInPosition("A076", 640,470,0, 20, 20,  amarelo, aqp);
 	createCubeInPosition("A077", 670,470,0, 20, 20,  amarelo, aqp);
 
