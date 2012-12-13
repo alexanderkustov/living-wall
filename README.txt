@@ -1,1 +1,1 @@
-Procurem bugs
+Tudo ok, podemos minificar todas as cenas se quiserem
