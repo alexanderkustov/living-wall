@@ -1,0 +1,9 @@
+[06-Dec-2012 15:33:05] PHP Parse error:  syntax error, unexpected T_EXIT, expecting T_STRING in /home/alex/public_html/three/mobilesend.php on line 6
+[06-Dec-2012 15:45:34] PHP Parse error:  syntax error, unexpected ')' in /home/alex/public_html/three/mobilesend.php on line 29
+[06-Dec-2012 15:48:54] PHP Parse error:  syntax error, unexpected '}' in /home/alex/public_html/three/mobilesend.php on line 59
+[06-Dec-2012 15:50:48] PHP Parse error:  syntax error, unexpected '}' in /home/alex/public_html/three/mobilesend.php on line 53
+[06-Dec-2012 15:51:06] PHP Parse error:  syntax error, unexpected '}' in /home/alex/public_html/three/mobilesend.php on line 53
+[07-Dec-2012 15:46:33] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/alex/public_html/three/mobilesend.php on line 46
+[07-Dec-2012 15:47:16] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/alex/public_html/three/mobilesend.php on line 46
+[07-Dec-2012 15:47:20] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/alex/public_html/three/mobilesend.php on line 46
+[07-Dec-2012 17:23:27] PHP Parse error:  syntax error, unexpected '.' in /home/alex/public_html/three/mobilesend.php on line 43
